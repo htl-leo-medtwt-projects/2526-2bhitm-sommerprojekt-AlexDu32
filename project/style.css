@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* FONTS */
@@ -56,4 +57,205 @@ body{
 }
 #start-button:hover{
     transform: scale(1.2);
+}
+
+#lehrer-start{
+    width: 40vw;
+    height: auto;
+    z-index: 6;
+    animation: LeSlideIn 4s linear 0s 1 forwards;
+}
+@keyframes LeSlideIn  {
+    0%{left: -30rem;}
+    50%{left: -10rem;}
+    100%{left: 3rem;}
+}
+/*BLOCK 2 ""*/
+/*BLOCK 2 ""*/
+/*BLOCK 2 ""*/
+
+#block-2{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+#erklär-form{
+    width: 20vw;
+    height: 100vh;
+    transition: all 0.4s ease;
+}
+#erklär-form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#verkauf-form{
+    position: absolute;
+    left: 15.5rem;
+    width: 20vw;
+    height: 100vh;
+    transition: all 0.4s ease;
+}
+#verkauf-form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#lade-form{
+    position: absolute;
+    left: 31rem;
+    width: 22vw;
+    height: 100vh;
+    transition: all 0.4s ease;
+}
+#lade-form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#neu-form{
+    position: absolute;
+    left: 46.5rem;
+    width: 23vw;
+    height: 100vh;
+    transition: all 0.4s ease;
+}
+#neu-form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#shop-form{
+    position: absolute;
+    left: 64rem;
+    width: 20vw;
+    height: 100vh;
+    transform-origin: right center;
+    transition: all 0.4s ease;
+}
+#shop-form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* HOVER EFFEKTE */
+#erklär-form:hover{
+    width: 30vw;
+    height: 100vh;
+    z-index: 100;
+}
+#erklär-form h1 {
+    transition: transform 0.6s ease;
+}
+#erklär-form:hover > h1 {
+    transform: rotate(10deg);
+    left: 1rem;
+}
+
+
+#verkauf-form:hover{
+    width: 30vw;
+    height: 100vh;
+    z-index: 100;
+}
+#verkauf-form h1 {
+    transition: transform 0.6s ease;
+}
+#verkauf-form:hover > h1 {
+    transform: rotate(30deg);
+    left: -1.5rem;
+}
+
+#lade-form:hover{
+    width: 30vw;
+    height: 100vh;
+    z-index: 100;
+}
+#lade-form h1 {
+    transition: transform 0.6s ease;
+}
+#lade-form:hover > h1 {
+    transform: rotate(30deg);
+    left: -0.5rem;
+}
+
+#neu-form:hover{
+    width: 30vw;
+    height: 100vh;
+    z-index: 100;
+}
+#neu-form h1 {
+    transition: transform 0.6s ease;
+}
+#neu-form:hover > h1 {
+    transform: rotate(20deg);
+    left: -0.5rem;
+    font-size: 3.9rem;
+}
+
+#shop-form:hover{
+    left: 60rem;
+    width: 30vw;
+    height: 100vh;
+    z-index: 100;
+}
+#shop-form h1 {
+    transition: transform 0.6s ease;
+}
+#shop-form:hover > h1 {
+    transform: rotate(30deg);
+    left: 4rem;
+}
+
+/* SEITEN UE`S */
+#seite-eins{
+    font-family: UE,sans-serif;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 10rem;
+    left: -4rem;
+    transform: rotate(+60deg);
+}
+#seite-zwei{
+    font-family: UE,sans-serif;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 10rem;
+    left: -5.5rem;
+    transform: rotate(+61deg);
+}
+#seite-drei{
+    font-family: UE,sans-serif;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 10rem;
+    left: 0rem;
+    transform: rotate(+61deg);
+}
+#seite-vier{
+    font-family: UE,sans-serif;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 10rem;
+    left: 0rem;
+    transform: rotate(+61deg);
+}
+#seite-fuenf{
+    font-family: UE,sans-serif;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 10rem;
+    left: 0rem;
+    transform: rotate(+61deg);
 }
