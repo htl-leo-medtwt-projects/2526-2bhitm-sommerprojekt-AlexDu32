@@ -1,4 +1,4 @@
-body{
+html,body{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -11,15 +11,18 @@ body{
     font-family: UE;
     src: url(fonts/rushon_ground/Rushon\ Ground.ttf);
 }
-
+@font-face {
+    font-family: text;
+    src: url(fonts/tuncho_plonko/TunchoPlonko.ttf);
+}
 /*      */
 /*      */
 /*      */
 #start-bild{
     position: absolute;
     z-index: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 #start-ue{
     font-family: UE;
@@ -60,6 +63,7 @@ body{
 }
 
 #lehrer-start{
+    position: absolute;
     width: 40vw;
     height: auto;
     z-index: 6;
@@ -83,6 +87,13 @@ body{
     width: 20vw;
     height: 100vh;
     transition: all 0.4s ease;
+}
+#erklär-form a{
+    width: 20vw;
+    height: 100vh;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: white;
 }
 #erklär-form img{
     width: 100%;
@@ -258,4 +269,95 @@ body{
     top: 10rem;
     left: 0rem;
     transform: rotate(+61deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ERKLÄR HTML */
+#tuere-erklaer{
+    width: 100vw;
+    height: 106vh;
+}
+#betreten{
+    font-family: text;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 23rem;
+    top: 11rem;
+}
+#betreten:hover{
+    cursor: pointer;
+}
+#erklaer-back{
+    width: 100vw;
+    height: 100vh;
+}
+#erklaer-lehrer{
+    height: auto;
+    width: 50vw;
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: -3rem;
+}
+#erklaer-overlay{
+    width: 75vw;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 0rem;
+    margin-top: 17rem;
+}
+#erklaer-text{
+    width: 48vw;
+    height: auto;
+    font-family: text;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin-left: 32.5rem;
+    margin-top: 13rem;
+}
+#fragen{
+    font-family: text;
+    font-size: 3rem;
+    color: rgb(179, 179, 179);
+    position: absolute;
+    z-index: 4;
+    margin-left: 25rem;
+    margin-top: 40rem;
 }
