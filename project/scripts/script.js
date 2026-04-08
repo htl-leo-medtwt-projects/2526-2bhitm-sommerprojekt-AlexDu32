@@ -17,4 +17,8 @@ function showEBlockTwo(){
     EblockZwei.style.display = 'grid'
 }
 
+function showFragen(){
+    
+}
+
 
