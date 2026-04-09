@@ -25,7 +25,7 @@
 <div id="block-2">
 
     <div id="erklär-form">
-        <h1 id="seite-eins"> <a href="html/erklraer.html">Erklärung</a></h1>
+        <h1 id="seite-eins" onclick="showErklaer()">Erklärung</h1>
         <img src="img/Erklär-back.webp">
     </div>
 
@@ -49,6 +49,35 @@
         <img src="img/shop-form.webp">
     </div>
 </div>
+
+
+
+
+<section id="erklaer-section">
+     <div id="E-block-eins">
+      <img id="tuere-erklaer" src="img/erklär-1-back.webp">
+      <h1 id="betreten" onclick="showEBlockTwo()">Besprechung betreten</h1>  
+    </div>
+
+    <div id="E-block-zwei">
+        <img id="erklaer-back"  src="img/Erklär-back.webp">
+        <img id="erklaer-lehrer" src="img/physik-professor.webp">
+        <img id="erklaer-overlay" src="img/erklär-overlay.webp">
+
+        <p id="erklaer-text">Der Spieler muss heimlich Gegenstände aus Klassenräumen stehlen. Die Items haben unterschiedliche Werte, sodass er entscheiden muss, welche Sachen sich am meisten lohnen mitzunehmen. Nach jeder Runde werden die gestohlenen Gegenstände verkauft, wobei die Preise im Verkaufslog angezeigt werden. Mit dem verdienten Geld kann der Spieler weitere Stockwerke wie den ersten und zweiten Stock freischalten, in denen der Loot wertvoller ist.</p>
+        <p id="raufRunter" onclick="showFragen()">></p>
+        <div id="fragen-blatt">
+            <p id="frage-1" onclick="showFrageEins()">Wie beendet man eine Runde?</p>
+            <p id="frage-2" onclick="showFrageZwei()">Welche Items bringen am meisten Geld?</p>
+            <p id="frage-3" onclick="showFrageDrei()">Um was geht es in dem Spiel?</p>
+            <img id="blatt" src="img/fragen.webp">
+        </div>
+        
+        <h1 id="Everlassen" onclick="EgoBack()">Besprechung verlassen</h1>
+
+
+    </div>
+</section>
     
 
     

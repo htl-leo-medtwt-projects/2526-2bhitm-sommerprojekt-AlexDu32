@@ -230,6 +230,9 @@ html,body{
     left: -4rem;
     transform: rotate(+60deg);
 }
+#seite-eins:hover{
+    cursor: pointer;
+}
 #seite-zwei{
     font-family: UE,sans-serif;
     font-size: 4rem;
@@ -306,6 +309,9 @@ html,body{
 
 
 /* ERKLÄR HTML */
+#erklaer-section{
+    display: none;
+}
 #tuere-erklaer{
     width: 100vw;
     height: 106vh;
@@ -407,4 +413,48 @@ html,body{
     z-index: 6;
     margin-left: 17rem;
     margin-top: 5rem;
+    transition: all 0.1s linear;
+}
+#frage-2{
+    font-size: 1rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 6;
+    margin-left: 16rem;
+    margin-top: 8rem;
+    transition: all 0.1s linear;
+}
+#frage-3{
+    font-size: 1rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 6;
+    margin-left: 17.5rem;
+    margin-top: 11rem;
+    transition: all 0.1s linear;
+}
+#frage-1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#frage-2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#frage-3:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+#Everlassen{
+    font-size: 2rem;
+    color: white;
+    font-family: text;
+    position: absolute;
+    z-index: 5;
+    margin-left: 58rem;
+}
+#Everlassen:hover{
+    cursor: pointer;
 }
