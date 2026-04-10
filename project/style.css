@@ -101,9 +101,11 @@ html,body{
 #seite-eins{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     font-family: ue;
+    left: 2rem;
+    top: 8rem;
 }
 
 #verkauf-form{
@@ -121,9 +123,11 @@ html,body{
 #seite-zwei{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     font-family: ue;
+    top: 3rem;
+    left: 8rem;
 }
 
 #shop-form{
@@ -141,9 +145,11 @@ html,body{
 #seite-fuenf{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 4.5rem;
     color: white;
     font-family: ue;
+    left: 3rem;
+    top: 8rem;
 }
 
 #neu-form{
@@ -161,9 +167,12 @@ html,body{
 #seite-vier{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     font-family: ue;
+    transform: rotate(90deg);
+    left: 1rem;
+    top: 16rem;
 }
 
 #lade-form{
@@ -181,24 +190,17 @@ html,body{
 #seite-drei{
     position: absolute;
     z-index: 3;
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     font-family: ue;
+    transform: rotate(90deg);
+    left: -3rem;
+    top: 18.5rem;
+    width: 30vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pointer:hover{
+    cursor: pointer;
+}
 
 
 
@@ -369,4 +371,30 @@ html,body{
 }
 #Everlassen:hover{
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOAD GAME */
+#neuesSpiel-section{
+    display: none;
+}
+#neuesBack{
+    width: 100vw;
+    height: 100vh;
 }

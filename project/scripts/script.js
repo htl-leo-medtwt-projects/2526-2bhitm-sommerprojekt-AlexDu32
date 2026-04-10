@@ -6,7 +6,10 @@ let EblockZwei = document.getElementById('E-block-zwei')
 let erklaerText = document.getElementById('erklaer-text')
 let fragenBlatt = document.getElementById('fragen-blatt')
 let raufRunter = document.getElementById('raufRunter')
+
+// Sections
 let erklaerSection = document.getElementById('erklaer-section')
+let LoadGameSection = document.getElementById('neuesSpiel-section')
 
 function showBlockTwo(){
     block1.style.display = 'none'
@@ -57,5 +60,12 @@ function showFrageDrei(){
 function EgoBack(){
     erklaerSection.style.display = 'none'
     block2.style.display = 'grid'
+}
+
+// LOAD GAME anzeigen 
+function showLoadGame(){
+    block2.style.display = 'none'
+    LoadGameSection.style.display = 'grid'
+
 }
 
