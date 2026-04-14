@@ -10,6 +10,7 @@ let raufRunter = document.getElementById('raufRunter')
 // Sections
 let erklaerSection = document.getElementById('erklaer-section')
 let LoadGameSection = document.getElementById('neuesSpiel-section')
+let VerkaufslogSection = document.getElementById('Verkaufslog-section')
 
 function showBlockTwo(){
     block1.style.display = 'none'
@@ -45,10 +46,13 @@ function showFragen(){
 
 //
 function showFrageEins(){
+    
     erklaerText.innerHTML =""
     erklaerText.innerHTML = `Eine Runde endet, wenn du den Klassenraum wieder verlässt, bevor der Lehrer zurückkommt. Du hast dafür 20 Sekunden Zeit, um möglichst viele Items zu stehlen und rechtzeitig zu entkommen. Wenn du es nicht schaffst, den Raum rechtzeitig zu verlassen, hast du die Runde verloren.
-                             Außerdem gibt es eine Leiste, die anzeigt, wann der Lehrer zurückkommt. Wenn die Leiste voll ist, kommt der Lehrer in den Raum. In diesem Moment musst du dich schnell verstecken, sonst wirst du erwischt und verlierst die Runde.`
+    Außerdem gibt es eine Leiste, die anzeigt, wann der Lehrer zurückkommt. Wenn die Leiste voll ist, kommt der Lehrer in den Raum. In diesem Moment musst du dich schnell verstecken, sonst wirst du erwischt und verlierst die Runde.`
+    
 }
+
 function showFrageZwei(){
     erklaerText.innerHTML=""
     erklaerText.innerHTML = `Die Wertigkeit der Items siehst du im Verkaufslog, dort wird angezeigt, wie viel jedes gestohlene Item einbringt. Generell gilt: Je höher du im Stockwerk bist, desto wertvoller werden die Items. Überlege also gut, welche Sachen du mitnimmst, um das meiste Geld zu verdienen!`
@@ -66,6 +70,19 @@ function EgoBack(){
 function showLoadGame(){
     block2.style.display = 'none'
     LoadGameSection.style.display = 'grid'
+}
+function LGBack(){
+    LoadGameSection.style.display = 'none'
+    block2.style.display = 'grid'
+}
 
+// VerkaufsLog
+function showVerkaufslog(){
+    block2.style.display = 'none'
+    VerkaufslogSection.style.display = 'grid'
+}
+function VerkauflogBack(){
+    VerkaufslogSection.style.display = 'none'
+    block2.style.display = 'grid'
 }
 

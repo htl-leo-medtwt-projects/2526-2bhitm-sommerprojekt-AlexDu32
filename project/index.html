@@ -30,7 +30,7 @@
     </div>
 
     <div id="verkauf-form">
-        <h1 id="seite-zwei" class="pointer">Verkaufslog</h1>
+        <h1 id="seite-zwei" class="pointer" onclick="showVerkaufslog()">Verkaufslog</h1>
         <img src="img/erklaer-form-back.webp">
     </div>
 
@@ -83,10 +83,31 @@
     </div>
 </section>
 
+<!---->
 <section id="neuesSpiel-section">
     <img id="neuesBack" src="img/Load-Game-Back.webp">
+    <h1 id="LGBack" onclick="LGBack()">Verlassen</h1>
 </section>
+<!---->
 
+
+
+<section id="Verkaufslog-section">
+    <img id="verkaufBack" src="img/Price-Back.webp">
+    <!--eifnach die produkte-->
+
+    <div id="VerkaufBlockEins">
+        <img id="item-1" src="img/Buntstift-1.webp">
+        <p id="item-1-verkauf">Verkaufspreis: 0.5€</p>
+
+        <img id="item-2" src="">
+    </div>
+
+
+
+    <p id="untenlinks" onclick="VerkauflogBack()" >Verlassen</p>
+    <p id="untenrechts" onclick="">Nächste Seite></p>
+</section>
     
 </body>
 </html>

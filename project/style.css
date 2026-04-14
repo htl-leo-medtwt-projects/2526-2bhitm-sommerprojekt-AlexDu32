@@ -398,3 +398,83 @@ html,body{
     width: 100vw;
     height: 100vh;
 }
+#LGBack{
+    font-size: 2rem;
+    color: white;
+    font-family: text;
+    position: absolute;
+    z-index: 5;
+    margin-left: 68rem;
+    animation: bigSmall 2s linear  infinite;
+}
+#LGBack:hover{
+    cursor: pointer;
+}
+
+@keyframes bigSmall {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+
+/*VerkaufsSection*/
+#Verkaufslog-section{
+    display: none;
+}
+#verkaufBack{
+    width: 100vw;
+    height: 100vh;
+}
+#untenrechts{
+    font-size: 1rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 7;
+    right: 5rem;
+    bottom: 3rem;
+}
+#untenlinks{
+    font-size: 1rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 2;
+    left: 5rem;
+    bottom: 3rem;
+}
+#untenrechts:hover{
+    cursor: pointer;
+}
+#untenlinks:hover{
+    cursor: pointer;
+}
+/*ITEMS*/
+/*ITEMS*/
+/*ITEMS*/
+#item-1{
+    width: 16vw;
+    height: 13vh;
+    position: absolute;
+    z-index: 2;
+    left: 4rem;
+    top: 9rem;
+    transform: rotate(-20deg);
+}
+#item-1-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 7rem;
+}
