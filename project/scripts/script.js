@@ -12,6 +12,10 @@ let erklaerSection = document.getElementById('erklaer-section')
 let LoadGameSection = document.getElementById('neuesSpiel-section')
 let VerkaufslogSection = document.getElementById('Verkaufslog-section')
 
+// VerkaufsBlöcke
+let verkaufsBlockEins = document.getElementById('VerkaufBlockEins')
+let verkaufsBlockZwei = document.getElementById('VerkaufBlockZwei')
+
 function showBlockTwo(){
     block1.style.display = 'none'
     block2.style.display = 'grid'
@@ -84,5 +88,10 @@ function showVerkaufslog(){
 function VerkauflogBack(){
     VerkaufslogSection.style.display = 'none'
     block2.style.display = 'grid'
+}
+
+function seiteZwei(){
+    verkaufsBlockEins.style.display = 'none'
+    verkaufsBlockZwei.style.display= 'grid'
 }
 

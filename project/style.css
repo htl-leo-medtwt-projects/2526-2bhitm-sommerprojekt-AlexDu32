@@ -466,8 +466,8 @@ html,body{
     position: absolute;
     z-index: 2;
     left: 4rem;
-    top: 9rem;
-    transform: rotate(-20deg);
+    top: 7rem;
+    transform: rotate(120deg);
 }
 #item-1-verkauf{
     font-family: text;
@@ -476,5 +476,221 @@ html,body{
     position: absolute;
     z-index: 2;
     left: 13rem;
+    top: 5rem;
+}
+
+#item-2{
+    width: 20vw;
+    height: 22vh;
+    position: absolute;
+    z-index: 2;
+    left: 2rem;
+    top: 17rem;
+    transform: rotate(-10deg);
+}
+#item-2-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 17rem;
+}
+
+#item-3{
+    width: 16vw;
+    height: 23vh;
+    position: absolute;
+    z-index: 2;
+    left: 4rem;
+    top: 27rem;
+    transform: rotate(-10deg);
+}
+#item-3-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 28rem;
+}
+
+
+/*RECHTS*/
+#item-4{
+    width: 13vw;
+    height: 24vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
     top: 7rem;
 }
+#item-4-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 7rem;
+}
+
+#item-5{
+    width: 13vw;
+    height: 24vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
+    top: 18rem;
+}
+#item-5-verkauf{
+    font-family: text;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 18rem;
+}
+
+#item-6{
+    width: 13vw;
+    height: 23vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
+    top: 28rem;
+}
+#item-6-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 28rem;
+}
+
+
+#item-7{
+    width: 15vw;
+    height: 23vh;
+    position: absolute;
+    z-index: 2;
+    left: 4rem;
+    top: 6rem;
+    transform: rotate(-30deg);
+}
+#item-7verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 5rem;
+}
+
+#item-8{
+    width: 20vw;
+    height: 25vh;
+    position: absolute;
+    z-index: 2;
+    left: 2rem;
+    top: 15rem;
+    transform: rotate(-10deg);
+}
+#item-8-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 17rem;
+}
+
+#item-9{
+    width: 16vw;
+    height: 23vh;
+    position: absolute;
+    z-index: 2;
+    left: 4rem;
+    top: 27rem;
+    transform: rotate(-10deg);
+}
+#item-9-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    left: 13rem;
+    top: 28rem;
+}
+
+
+/*RECHTS*/
+#item-10{
+    width: 13vw;
+    height: 24vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
+    top: 7rem;
+}
+#item-10-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 7rem;
+}
+
+#item-11{
+    width: 13vw;
+    height: 24vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
+    top: 18rem;
+}
+#item-11-verkauf{
+    font-family: text;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 18rem;
+}
+
+#item-12{
+    width: 13vw;
+    height: 23vh;
+    position: absolute;
+    z-index: 2;
+    right: 28rem;
+    top: 28rem;
+}
+#item-12-verkauf{
+    font-family: text;
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    right: 8rem;
+    top: 28rem;
+}
+
+#VerkaufBlockZwei{
+    display: none;
+}
+#VerkaufBlockEins{
+    display: grid;
+}
+
