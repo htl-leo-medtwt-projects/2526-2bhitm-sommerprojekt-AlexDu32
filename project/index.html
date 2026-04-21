@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--ICON-->
+    <link rel="icon" href="img/logo.webp">
     <title>SH-P3</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts/script.js" defer></script>
@@ -13,8 +14,15 @@
 <div id="block-1">
     <div id="start-overlay"></div>
     <img id="start-bild" src="img/start-bild.jpg">
-    <h1 id="start-ue">Side Hustle: Period 3</h1>
 
+    <h1 id="start-ue-eins">Side</h1>
+    <h1 id="start-ue-zwei">Hustle:</h1>
+    <h1 id="start-ue-drei">Period</h1>
+    <h1 id="start-ue-vier">3</h1>
+
+    <img id="start-kappe" src="img/kappe.webp">
+
+    
     <img id="start-button" onclick="showBlockTwo()" src="img/start-button.png">
 
     <img id="lehrer-start" src="img/lehrer-start.webp">
@@ -35,7 +43,7 @@
     </div>
 
     <div id="lade-form">
-        <h1 id="seite-drei" class="pointer" onclick="showLoadGame()">Spiel-laden</h1>
+        <h1 id="seite-drei" class="pointer" onclick="showLoadGame()">Spiel laden</h1>
         <img src="img/start-bild.jpg">
     </div>
 
@@ -45,7 +53,7 @@
     </div>
 
     <div id="shop-form">
-        <h1 id="seite-fuenf" class="pointer">Shop</h1>
+        <h1 id="seite-fuenf" class="pointer" onclick="showShop()">Shop</h1>
         <img src="img/shop-form.webp">
     </div>
 
@@ -123,27 +131,101 @@
         <p id="item-7-verkauf">Verkaufspreis: 3.5€</p>
 
         <img id="item-8" src="img/Schraubenzieher.webp">
-        <p id="item--8verkauf">Verkaufspreis: 3.20€</p>
+        <p id="item-8-verkauf">Verkaufspreis: 3.20€</p>
 
         <img id="item-9" src="img/UhuStick.webp">
-        <p id="item-9-verkauf">Verkaufspreis: 1€</p>
+        <p id="item-9-verkauf">Verkaufspreis: 1.20€</p>
 
 
         <img id="item-10" src="img/spitzer.webp">
-        <p id="item-10-verkauf">Verkaufspreis: 0.5€</p>
+        <p id="item-10-verkauf">Verkaufspreis: 2€</p>
 
         <img id="item-11" src="img/geodreieck.webp">
-        <p id="item-11-verkauf">Verkaufspreis: 1€</p>
+        <p id="item-11-verkauf">Verkaufspreis: 3€</p>
 
         <img id="item-12" src="img/tipex.webp">
-        <p id="item-12-verkauf">Verkaufspreis: 0.5€</p>
+        <p id="item-12-verkauf">Verkaufspreis: 5€</p>
+    </div>
+
+    <div id="VerkaufBlockDrei">
+        <img id="item-13" src="img/maus.webp">
+        <p id="item-13-verkauf">Verkaufspreis: 15€</p>
+
+        <img id="item-14" src="img/Jausenbox.webp">
+        <p id="item-14-verkauf">Verkaufspreis: 10€</p>
+
+        <img id="item-15" src="img/Schraubenzieher-2.webp">
+        <p id="item-15-verkauf">Verkaufspreis: 15€</p>
+
+
+        <img id="item-16" src="img/Zirkel.webp">
+        <p id="item-16-verkauf">Verkaufspreis: 25€</p>
+
+        <img id="item-17" src="img/tixo.webp">
+        <p id="item-17-verkauf">Verkaufspreis: 8€</p>
+
+        <img id="item-18" src="img/tackermaschine.webp">
+        <p id="item-18-verkauf">Verkaufspreis: 15€</p>
+    </div>
+
+    <div id="VerkaufBlockVier">
+        <img id="item-19" src="img/Brille.webp">
+        <p id="item-19-verkauf">Verkaufspreis: 25€</p>
+
+        <img id="item-20" src="img/Kopfhörer.webp">
+        <p id="item-20-verkauf">Verkaufspreis: 30€</p>
+
+        <img id="item-21" src="img/Schulordner.webp">
+        <p id="item-21-verkauf">Verkaufspreis: 30€</p>
+
+
+        <img id="item-22" src="img/Taschnrechner.webp">
+        <p id="item-22-verkauf">Verkaufspreis: 40€</p>
+
+        <img id="item-23" src="img/Schlüsselbund.webp">
+        <p id="item-23-verkauf">Verkaufspreis: 60€</p>
+
+        <img id="item-24" src="img/Handy.webp">
+        <p id="item-24-verkauf">Verkaufspreis: 100€</p>
     </div>
 
 
 
-    <p id="untenlinks" onclick="VerkauflogBack()" >Verlassen</p>
-    <p id="untenrechts" onclick="seiteZwei()">Nächste Seite></p>
+    <div id="untenlinks">
+        <p onclick=" VerkauflogBack()" >Verlassen</p>
+    </div>
+
+    <div id="untenrechts">
+         <p onclick="showSeiteZwei()">Nächste Seite></p>
+    </div>
+
 </section>
+
+<!-- SHOP SECTION-->
+ <section id="shop-section">
+
+    <div id="shop-block-eins">
+        <img id="shop-back" src="img/Shop-Back.webp">
+ <!-- Zuerst noch hallo sagen-->
+        <img id="verkauferin" src="img/verkäuferin.webp">
+        <img id="sprechblase" src="img/sprechblase.webp">
+        <p id="verkauf-text">Herzlich willkommen! Suchen Sie einen Rucksack oder möchten Sie sich unsere Booster ansehen?</p>
+
+        <div id="verkaufbox"></div>
+        <p id="rucksacke" onclick="showRucksaecke()">Rucksäcke</p>
+        <p id="zwischen">||</p>
+        <p id="booster" onclick="showBooster()">Booster</p>
+    </div>
+
+    <div id="rucksackBlock">
+        <img id="rucksack-back" src="img/Rucksaecke-back.webp">
+    </div>
+
+    <div id="boosterBlock">
+        
+    </div>
+
+ </section>
     
 </body>
 </html>

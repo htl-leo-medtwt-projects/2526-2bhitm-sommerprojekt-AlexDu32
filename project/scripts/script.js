@@ -11,10 +11,23 @@ let raufRunter = document.getElementById('raufRunter')
 let erklaerSection = document.getElementById('erklaer-section')
 let LoadGameSection = document.getElementById('neuesSpiel-section')
 let VerkaufslogSection = document.getElementById('Verkaufslog-section')
+let Shopsection = document.getElementById('shop-section')
 
 // VerkaufsBlöcke
+let untenlinks = document.getElementById('untenlinks')
+let untenrechts = document.getElementById('untenrechts')
+
 let verkaufsBlockEins = document.getElementById('VerkaufBlockEins')
 let verkaufsBlockZwei = document.getElementById('VerkaufBlockZwei')
+let verkaufsBlockDrei = document.getElementById('VerkaufBlockDrei')
+let verkaufsBlockVier = document.getElementById('VerkaufBlockVier')
+
+// Shop blöcke
+let shopEinsBlock = document.getElementById('shop-block-eins')
+let rucksackBlock = document.getElementById('rucksackBlock')
+let boosterBlock = document.getElementById('boosterBack')
+
+
 
 function showBlockTwo(){
     block1.style.display = 'none'
@@ -81,17 +94,88 @@ function LGBack(){
 }
 
 // VerkaufsLog
+
 function showVerkaufslog(){
     block2.style.display = 'none'
     VerkaufslogSection.style.display = 'grid'
+    verkaufsBlockDrei.style.display = 'none'
+    verkaufsBlockVier.style.display = 'none'
 }
 function VerkauflogBack(){
     VerkaufslogSection.style.display = 'none'
     block2.style.display = 'grid'
 }
 
-function seiteZwei(){
+
+function showSeiteEins(){
+    verkaufsBlockEins.style.display = 'grid'
+    verkaufsBlockZwei.style.display = 'none'
+    verkaufsBlockDrei.style.display = 'none'
+    verkaufsBlockVier.style.display = 'none'
+
+    untenlinks.innerHTML = `<p onclick="VerkauflogBack()">Verlassen</p>`
+    untenrechts.innerHTML = `<p onclick="showSeiteZwei()">Nächste Seite ></p>`
+}
+function showSeiteZwei(){
     verkaufsBlockEins.style.display = 'none'
-    verkaufsBlockZwei.style.display= 'grid'
+    verkaufsBlockZwei.style.display = 'grid'
+    verkaufsBlockDrei.style.display = 'none'
+    verkaufsBlockVier.style.display = 'none'
+
+    untenlinks.innerHTML = `<p onclick="showSeiteEins()">< Seite zurück</p>`
+    untenrechts.innerHTML = `<p onclick="showSeiteDrei()">Nächste Seite ></p>`
+}
+function showSeiteDrei(){
+    verkaufsBlockEins.style.display = 'none'
+    verkaufsBlockZwei.style.display = 'none'
+    verkaufsBlockDrei.style.display = 'grid'
+    verkaufsBlockVier.style.display = 'none'
+
+    untenlinks.innerHTML = `<p onclick="showSeiteZwei()">< Seite zurück</p>`
+    untenrechts.innerHTML = `<p onclick="showSeiteVier()">Nächste Seite ></p>`
+}
+function showSeiteVier(){
+    verkaufsBlockEins.style.display = 'none'
+    verkaufsBlockZwei.style.display = 'none'
+    verkaufsBlockDrei.style.display = 'none'
+    verkaufsBlockVier.style.display = 'grid'
+
+    untenlinks.innerHTML = `<p onclick="showSeiteDrei()">< Seite zurück</p>`
+    untenrechts.innerHTML = `<p onclick="showSeiteFuenf()">Nächste Seite></p>`
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SHOP SECTION
+function showShop(){
+    block2.style.display = 'none'
+    Shopsection.style.display  = 'grid'
+}
+function shopBack(){
+    block2.style.display = 'grid'
+    Shopsection.style.display  = 'none'
+}
+
+function showRucksaecke(){
+    shopEinsBlock.style.display = 'none'
+    rucksackBlock.style.display = 'grid'
+
+
+}
+function showBooster(){
+    shopEinsBlock.style.display = 'none'
+    boosterBlockBlock.style.display = 'grid'
+
+    
+}
