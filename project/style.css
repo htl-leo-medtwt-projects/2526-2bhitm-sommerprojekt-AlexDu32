@@ -1050,6 +1050,50 @@ opacity: 1;}
 #shop-block-eins{
     display: block;
 }
+#shop-hallo-eins{
+    display: grid;
+}
+#shop-hallo-zwei{
+    display: none;
+}
+
+#verkauferin-eins{
+    position: absolute;
+    z-index: 4;
+    width: 18vw;
+    height: auto;
+    left: 55rem;
+    top: 24rem;
+}
+#hallo-eins{
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    z-index: 5;
+    font-family: text;  
+    left: 40rem;
+    bottom: 1.5rem;
+}
+#hallo-eins:hover{
+    cursor: pointer;
+}
+#hallo-box{
+    width: 30vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 30rem;
+}
+
+
+
+
+
+
+
 #verkauferin{
     position: absolute;
     z-index: 4;
@@ -1078,14 +1122,14 @@ opacity: 1;}
     top: 11rem;
 }
 #verkaufbox{
-    width: 30vw;
+    width: 40vw;
     height: 7vh;
     background-color: white;
     position: absolute;
     z-index: 4;
     border-radius: 100px;
     bottom: 2rem;
-    left: 30rem;
+    left: 25rem;
 }
 #rucksacke{
     font-size: 1.2rem;
@@ -1093,20 +1137,23 @@ opacity: 1;}
     position: absolute;
     z-index: 5;
     font-family: text;  
-    left: 32rem;
+    left: 28rem;
     bottom: 1.5rem;
 }
 #rucksacke:hover{
     cursor: pointer;
 }
 #zwischen{
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: black;
     position: absolute;
     z-index: 5;
     font-family: text;  
-    left: 41rem;
-    bottom: 0rem;   
+    left: 39rem;
+    bottom: 1.5rem;   
+}
+#zwischen:hover{
+    cursor: pointer;
 }
 #booster{
     font-size: 1.2rem;
@@ -1114,7 +1161,7 @@ opacity: 1;}
     position: absolute;
     z-index: 5;
     font-family: text;  
-    left: 47rem;
+    left: 49rem;
     bottom: 1.5rem;
 }
 #booster :hover{

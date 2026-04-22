@@ -27,6 +27,9 @@ let shopEinsBlock = document.getElementById('shop-block-eins')
 let rucksackBlock = document.getElementById('rucksackBlock')
 let boosterBlock = document.getElementById('boosterBack')
 
+let shopHalloEins = document.getElementById('shop-hallo-eins')
+let shopHalloZwei = document.getElementById('shop-hallo-zwei')
+
 
 
 function showBlockTwo(){
@@ -166,6 +169,10 @@ function shopBack(){
     block2.style.display = 'grid'
     Shopsection.style.display  = 'none'
 }
+function Hallo(){
+    shopHalloEins.style.display = 'none'
+    shopHalloZwei.style.display = 'grid'
+}
 
 function showRucksaecke(){
     shopEinsBlock.style.display = 'none'
@@ -175,7 +182,5 @@ function showRucksaecke(){
 }
 function showBooster(){
     shopEinsBlock.style.display = 'none'
-    boosterBlockBlock.style.display = 'grid'
-
-    
+    boosterBlockBlock.style.display = 'grid'    
 }
