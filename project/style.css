@@ -1179,8 +1179,40 @@ opacity: 1;}
 #kaufen-1{
     position: absolute;
     z-index: 3;
-    width: 6vw;
+    width: 8vw;
     height: auto;
-    left: 5rem;
-    top: 9rem;
+    left: 3.2rem;
+    top: 10.2rem;
+}
+#kaufen-2{
+    position: absolute;
+    z-index: 3;
+    width: 8vw;
+    height: auto;
+    left: 66rem;
+    top: 10.2rem;
+}
+#kaufen-3{
+    position: absolute;
+    z-index: 3;
+    width: 8vw;
+    height: auto;
+    left: 42rem;
+    top: 24.2rem;
+}
+#kaufen-4{
+    position: absolute;
+    z-index: 3;
+    width: 8vw;
+    height: auto;
+    left: 16rem;
+    top: 36.2rem;
+}
+#kaufen-5{
+    position: absolute;
+    z-index: 3;
+    width: 8vw;
+    height: auto;
+    left: 59rem;
+    top: 36.2rem;
 }
