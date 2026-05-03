@@ -30,6 +30,9 @@ let boosterBlock = document.getElementById('boosterBack')
 let shopHalloEins = document.getElementById('shop-hallo-eins')
 let shopHalloZwei = document.getElementById('shop-hallo-zwei')
 
+let boosterBlockEins = document.getElementById('booster-block-1')
+let boosterBlockZwei = document.getElementById('booster-block-2')
+
 
 
 
@@ -158,6 +161,8 @@ function showSeiteVier(){
 
 
 // SHOP SECTION
+
+//RUCKSÄCKE
 function showShop(){
     block2.style.display = 'none'
     Shopsection.style.display  = 'grid'
@@ -187,4 +192,11 @@ function showBooster(){
 function BoosterBack(){
     boosterBlockBlock.style.display = 'none' 
     shopEinsBlock.style.display = 'grid'
+}
+
+// BOOSTER
+
+function showBoosterBlockZwei(){
+    boosterBlockEins.style.display = 'none'
+    boosterBlockZwei.style.display = 'grid'
 }
