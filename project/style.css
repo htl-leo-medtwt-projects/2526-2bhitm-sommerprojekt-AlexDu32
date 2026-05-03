@@ -1216,3 +1216,83 @@ opacity: 1;}
     left: 59rem;
     top: 36.2rem;
 }
+.kaufen-button:hover{
+    cursor: pointer;
+}
+#hangingSign{
+    position: absolute;
+    z-index: 4;
+    width: 15vw;
+    top: -3rem;
+    right: 0;
+}
+#rucksack-verlassen{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 5;
+    font-family: text;  
+    left: 70rem;
+    top: 1.3rem;
+}
+#rucksack-verlassen:hover{
+    cursor: pointer;
+}
+#rucksack-1{
+    position: absolute;
+    z-index: 100;
+    width: 13vw;
+    height: auto;
+    left: 1rem;
+    top: 1.8rem;
+}
+#rucksack-2{
+    position: absolute;
+    z-index: 100;
+    width: 18vw;
+    height: auto;
+    left: 56rem;
+    top: 1.8rem;
+}
+#rucksack-3{
+    position: absolute;
+    z-index: 100;
+    width: 16vw;
+    height: auto;
+    left: 35rem;
+    top: 11rem;
+}
+#rucksack-4{
+    position: absolute;
+    z-index: 100;
+    width: 16vw;
+    height: auto;
+    left: 8rem;
+    top: 24rem;
+}
+#rucksack-5{
+    position: absolute;
+    z-index: 100;
+    width: 16vw;
+    height: auto;
+    left: 53rem;
+    top: 24rem;
+}
+#locked-1{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 101;
+    left: 6rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.578);
+}
+#locked-2{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 101;
+    left: 45rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.578);
+}

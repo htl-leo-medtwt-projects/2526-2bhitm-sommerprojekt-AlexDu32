@@ -32,6 +32,7 @@ let shopHalloZwei = document.getElementById('shop-hallo-zwei')
 
 
 
+
 function showBlockTwo(){
     block1.style.display = 'none'
     block2.style.display = 'grid'
@@ -156,10 +157,6 @@ function showSeiteVier(){
 
 
 
-
-
-
-
 // SHOP SECTION
 function showShop(){
     block2.style.display = 'none'
@@ -177,10 +174,17 @@ function Hallo(){
 function showRucksaecke(){
     shopEinsBlock.style.display = 'none'
     rucksackBlock.style.display = 'grid'
-
-
 }
+function rucksackeBack(){
+    rucksackBlock.style.display = 'none'
+    shopEinsBlock.style.display = 'grid'
+}
+
 function showBooster(){
     shopEinsBlock.style.display = 'none'
     boosterBlockBlock.style.display = 'grid'    
+}
+function BoosterBack(){
+    boosterBlockBlock.style.display = 'none' 
+    shopEinsBlock.style.display = 'grid'
 }
