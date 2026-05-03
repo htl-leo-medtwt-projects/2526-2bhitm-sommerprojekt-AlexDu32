@@ -1320,6 +1320,7 @@ opacity: 1;}
 #boosterBlock{
     display: none;
 }
+
 #boosterBack-1{
     width: 100%;
     height: 100%;
@@ -1346,8 +1347,79 @@ opacity: 1;}
     left: 0;
     background-color: rgba(0, 0, 0, 0.491);
 }
+#booster-block-2{
+    display: none;
+}
 #boosterBack2{
     width: 100%;
     height: 100%;
     object-fit: contain; 
+}
+#getraenk-1{
+    position: absolute;
+    z-index: 40;
+    font-family: text;
+    font-size: 1.7rem;
+    color: black;
+    left: 51.3rem;
+    top: 16rem;
+}
+#getraenk-2{
+    position: absolute;
+    z-index: 40;
+    font-family: text;
+    font-size: 1.7rem;
+    color: black;
+    left: 51.3rem;
+    top: 19rem;
+}
+#getraenk-3{
+    position: absolute;
+    z-index: 40;
+    font-family: text;
+    font-size: 1.7rem;
+    color: black;
+    left: 51.3rem;
+    top: 22.5rem;
+}
+#getraenk-4{
+    position: absolute;
+    z-index: 40;
+    font-family: text;
+    font-size:1.7rem;
+    color: black;
+    left: 51.3rem;
+    top: 25.5rem;
+}
+#getraenk-5{
+    position: absolute;
+    z-index: 40;
+    font-family: text;
+    font-size: 1.7rem;
+    color: black;
+    left: 51rem;
+    top: 33rem;
+}
+.getraenk:hover{
+    cursor: pointer;
+}
+#booster-back{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    right: -8rem;
+    bottom: -9rem;
+}
+#booster-verlassen{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 5;
+    font-family: text;  
+    left: 67.5rem;
+    bottom: 1.3rem;
+}
+#booster-verlassen:hover{
+    cursor: pointer;
 }
