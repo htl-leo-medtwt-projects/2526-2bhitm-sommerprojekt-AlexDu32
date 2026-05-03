@@ -1317,3 +1317,37 @@ opacity: 1;}
 /*BOOSTER BLOCK*/
 /*BOOSTER BLOCK*/
 /*BOOSTER BLOCK*/
+#boosterBlock{
+    display: none;
+}
+#boosterBack-1{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#zumAutomat{
+    font-family: text;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    z-index: 4;
+    left: 26rem;
+    top: 11rem;
+}
+#zumAutomat:hover{
+    cursor: pointer;
+}
+#booster-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.491);
+}
+#boosterBack2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}

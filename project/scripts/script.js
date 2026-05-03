@@ -25,13 +25,15 @@ let verkaufsBlockVier = document.getElementById('VerkaufBlockVier')
 // Shop blöcke
 let shopEinsBlock = document.getElementById('shop-block-eins')
 let rucksackBlock = document.getElementById('rucksackBlock')
-let boosterBlock = document.getElementById('boosterBack')
+let boosterBlock = document.getElementById('boosterBlock')
 
 let shopHalloEins = document.getElementById('shop-hallo-eins')
 let shopHalloZwei = document.getElementById('shop-hallo-zwei')
 
 let boosterBlockEins = document.getElementById('booster-block-1')
 let boosterBlockZwei = document.getElementById('booster-block-2')
+
+let boosterOverlay = document.getElementById('booster-overlay')
 
 
 
@@ -187,10 +189,10 @@ function rucksackeBack(){
 
 function showBooster(){
     shopEinsBlock.style.display = 'none'
-    boosterBlockBlock.style.display = 'grid'    
+    boosterBlock.style.display = 'grid'    
 }
 function BoosterBack(){
-    boosterBlockBlock.style.display = 'none' 
+    boosterBlock.style.display = 'none' 
     shopEinsBlock.style.display = 'grid'
 }
 
@@ -199,4 +201,5 @@ function BoosterBack(){
 function showBoosterBlockZwei(){
     boosterBlockEins.style.display = 'none'
     boosterBlockZwei.style.display = 'grid'
+    boosterOverlay.style.display = 'none'
 }
