@@ -38,6 +38,7 @@ let boosterOverlay = document.getElementById('booster-overlay')
 
 // Spiel
 let spielBlockEins = document.getElementById('SpielBlockEins')
+let spielBlockZwei = document.getElementById('SpielBlockZwei')
 
 
 
@@ -215,4 +216,8 @@ function showNeuesSpiel(){
     block2.style.display = 'none'
     neuesSpielSection.style.display = 'grid'
     spielBlockEins.style.display = 'grid'
+}
+function showSpielBlockZwei(){
+    spielBlockEins.style.display = 'none'
+    spielBlockZwei.style.display = 'grid'
 }
