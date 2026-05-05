@@ -12,6 +12,7 @@ let erklaerSection = document.getElementById('erklaer-section')
 let LoadGameSection = document.getElementById('neuesSpiel-section')
 let VerkaufslogSection = document.getElementById('Verkaufslog-section')
 let Shopsection = document.getElementById('shop-section')
+let neuesSpielSection = document.getElementById('Spielsection')
 
 // VerkaufsBlöcke
 let untenlinks = document.getElementById('untenlinks')
@@ -34,6 +35,9 @@ let boosterBlockEins = document.getElementById('booster-block-1')
 let boosterBlockZwei = document.getElementById('booster-block-2')
 
 let boosterOverlay = document.getElementById('booster-overlay')
+
+// Spiel
+let spielBlockEins = document.getElementById('SpielBlockEins')
 
 
 
@@ -157,11 +161,6 @@ function showSeiteVier(){
 
 
 
-
-
-
-
-
 // SHOP SECTION
 
 //RUCKSÄCKE
@@ -202,4 +201,18 @@ function showBoosterBlockZwei(){
     boosterBlockEins.style.display = 'none'
     boosterBlockZwei.style.display = 'grid'
     boosterOverlay.style.display = 'none'
+}
+
+
+
+
+
+
+// SPIEL
+// SPIEL
+// SPIEL
+function showNeuesSpiel(){
+    block2.style.display = 'none'
+    neuesSpielSection.style.display = 'grid'
+    spielBlockEins.style.display = 'grid'
 }
