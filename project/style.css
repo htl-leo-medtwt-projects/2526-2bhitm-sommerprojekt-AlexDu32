@@ -1486,3 +1486,88 @@ opacity: 1;}
     height: 100%;
     object-fit: contain;
 }
+#Testabgeben{
+    width: 30vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 29rem;
+}
+#abgeben{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 6;
+    left: 36rem;
+    bottom: 1rem;
+}
+#abgeben:hover{
+    cursor: pointer;
+}
+#Test{
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    left: 9rem;
+    top: 0rem;
+}
+#name-test{
+    position: absolute;
+    z-index: 7;
+    font-size: 1rem;
+    font-family: text;
+    color: black;
+    left: 29rem;
+    top: 9rem;
+}
+#name-eingabe{
+    position: absolute;
+    z-index: 7rem;
+    background-color: rgba(255, 247, 183, 0.5);
+    width: 20vw;
+    height: 3vh;
+    left: 34rem;
+    top: 10rem;
+}
+#datum-test{
+    position: absolute;
+    z-index: 7;
+    font-size: 1rem;
+    font-family: text;
+    color: black;
+    left: 29rem;
+    top: 11rem;
+}
+#datum-eingabe{
+    position: absolute;
+    z-index: 7rem;
+    background-color: rgba(255, 247, 183, 0.5);
+    width: 20vw;
+    height: 3vh;
+    left: 34rem;
+    top: 12rem;
+}
+#test-hr{
+    width: 30vw;
+    height: 0.2vh;
+    position: absolute;
+    z-index: 7;
+    background-color: black;
+    color: black;
+    left: 28.5rem;
+    top: 35rem;
+}
+#lehrer-name{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.1;
+    font-family: text;
+    color: black;
+    left: 28.5rem;
+    top: 35.5rem;
+}
