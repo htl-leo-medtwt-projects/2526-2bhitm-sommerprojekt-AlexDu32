@@ -45,11 +45,15 @@ let spielBlockVier = document.getElementById('SpielBlockVier')
 
 let Inventar = document.getElementById('InventarBlock')
 
-let nameInput = document.getElementById('name-eingabe')
-let datumInput = document.getElementById('datum-eingabe')
+
+let LebenslaufName = document.getElementById('deinName')
+let LebenslaufDatum = document.getElementById('deinDatum')
+let LebenslaufKontostand = document.getElementById('deinKontostand')
+
 // Spiel wichtige variablen
-let name = "";
+let SpielerName = "";
 let datum = "";
+let Kontostand = 0;
 
 
 
@@ -231,13 +235,14 @@ function showNeuesSpiel(){
 function showSpielBlockZwei(){
     spielBlockEins.style.display = 'none'
     spielBlockZwei.style.display = 'grid'
-
-    name = nameInput.value
-    datum = datumInput.value
 }
 function showSpielBlockDreiI(){
     spielBlockZwei.style.display = 'none'
     spielBlockDrei.style.display = 'grid'
+
+    
+    SpielerName = document.getElementById('name-eingabe').value
+    datum = document.getElementById('datum-eingabe').value
 }
 function showSpielBlockVier(){
     spielBlockDrei.style.display = 'none'
@@ -246,4 +251,26 @@ function showSpielBlockVier(){
 function showInventar(){
     spielBlockVier.style.display = 'none'
     Inventar.style.display = "grid"
+
+
+    LebenslaufDatum.innerHTML = datum
+    LebenslaufName.innerHTML = SpielerName
+    LebenslaufKontostand.innerHTML = Kontostand
+}
+
+function showInvVerkaufslog(){
+    Inventar.style.display = 'none'
+    VerkaufslogSection.style.display = 'grid'
+
+    verkaufsBlockEins.style.display = 'grid'
+    verkaufsBlockZwei.style.display = 'none'
+    verkaufsBlockDrei.style.display = 'none'
+    verkaufsBlockVier.style.display = 'none'
+
+    untenlinks.innerHTML = `<p onclick="VerkaufslogZuInventar()">Zurück</p>`
+    untenrechts.innerHTML = `<p onclick="showSeiteZwei()">Nächste Seite ></p>`
+}
+function VerkaufslogZuInventar(){
+    VerkaufslogSection.style.display = 'none'
+    Inventar.style.display = 'grid'
 }

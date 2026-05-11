@@ -1754,3 +1754,43 @@ opacity: 1;}
     left: 24rem;
     top: 10rem;
 }
+#Kontostand{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 14rem;
+    top: 13rem;
+}
+#deinKontostand{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 23rem;
+    top: 13rem;
+}
+#Verkaufslog-buch{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    left: 35rem;
+    top: 20rem;
+    transform: rotate(+10deg);    
+}
+#Verkaufslog-buch:hover{
+    cursor: pointer;
+}
+#handyZumShop{
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    left: 55rem;
+}
+#handyZumShop:hover{
+    cursor: pointer;
+}
