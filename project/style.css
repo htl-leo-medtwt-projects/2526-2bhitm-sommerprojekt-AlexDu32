@@ -1643,7 +1643,70 @@ opacity: 1;}
     color: black;
     font-family: text;
     position: absolute;
-    z-index: 1000rem;
-    left: 57rem;
-    top: 9rem;
+    z-index: 1000;
+    left: 59rem;
+    top: 7rem;
+}
+
+#SpielBlockVier{
+    display: none;
+}
+#pause-back{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#pauseBar{
+    width: 55vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 18rem; 
+}
+#Inventar{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 9;
+    left: 25rem;
+    bottom: 1rem;
+}
+#Inventar:hover{
+    cursor: pointer;
+}
+#zwischen-dings{
+    font-size: 2rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 9;
+    left: 39rem;
+    bottom: 0rem;
+}
+#loot-vorgang{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 9;
+    left: 43rem;
+    bottom: 1rem;
+}
+#loot-vorgang:hover{
+    cursor: pointer;
+}
+#InventarBlock{
+    display: none;
+}
+#Inventar-back{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

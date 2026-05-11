@@ -40,7 +40,10 @@ let boosterOverlay = document.getElementById('booster-overlay')
 let spielBlockEins = document.getElementById('SpielBlockEins')
 let spielBlockZwei = document.getElementById('SpielBlockZwei')
 let spielBlockDrei = document.getElementById('SpielBlockDrei')
+let spielBlockVier = document.getElementById('SpielBlockVier')
 
+
+let Inventar = document.getElementById('InventarBlock')
 
 let nameInput = document.getElementById('name-eingabe')
 let datumInput = document.getElementById('datum-eingabe')
@@ -235,4 +238,12 @@ function showSpielBlockZwei(){
 function showSpielBlockDreiI(){
     spielBlockZwei.style.display = 'none'
     spielBlockDrei.style.display = 'grid'
+}
+function showSpielBlockVier(){
+    spielBlockDrei.style.display = 'none'
+    spielBlockVier.style.display = 'grid'
+}
+function showInventar(){
+    spielBlockVier.style.display = 'none'
+    Inventar.style.display = "grid"
 }
