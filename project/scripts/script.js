@@ -274,3 +274,20 @@ function VerkaufslogZuInventar(){
     VerkaufslogSection.style.display = 'none'
     Inventar.style.display = 'grid'
 }
+
+function showInvShop(){
+    Inventar.style.display ='none'
+    Shopsection.style.display = 'grid'
+
+    document.getElementById('zwischen').innerHTML = 'zurück'
+    document.getElementById('zwischen').onclick = ShopZuInventar
+}
+
+function ShopZuInventar(){
+    Shopsection.style.display = 'none'
+    Inventar.style.display = 'grid'
+}
+function InvZuPauseU(){
+    Inventar.style.display ='none'
+     spielBlockVier.style.display = 'grid'
+}

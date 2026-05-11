@@ -1778,7 +1778,7 @@ opacity: 1;}
     position: absolute;
     z-index: 5;
     left: 35rem;
-    top: 20rem;
+    top: 16rem;
     transform: rotate(+10deg);    
 }
 #Verkaufslog-buch:hover{
@@ -1790,7 +1790,31 @@ opacity: 1;}
     position: absolute;
     z-index: 5;
     left: 55rem;
+    top: 7rem;
 }
 #handyZumShop:hover{
+    cursor: pointer;
+}
+#zuruckPause{
+    width: 30vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 29rem;
+}
+#invPauseBack{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 11;
+    left: 35rem;
+    bottom: 1rem;
+}
+#invPauseBack:hover{
     cursor: pointer;
 }
