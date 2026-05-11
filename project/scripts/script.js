@@ -42,6 +42,13 @@ let spielBlockZwei = document.getElementById('SpielBlockZwei')
 let spielBlockDrei = document.getElementById('SpielBlockDrei')
 
 
+let nameInput = document.getElementById('name-eingabe')
+let datumInput = document.getElementById('datum-eingabe')
+// Spiel wichtige variablen
+let name = "";
+let datum = "";
+
+
 
 
 function showBlockTwo(){
@@ -221,6 +228,9 @@ function showNeuesSpiel(){
 function showSpielBlockZwei(){
     spielBlockEins.style.display = 'none'
     spielBlockZwei.style.display = 'grid'
+
+    name = nameInput.value
+    datum = datumInput.value
 }
 function showSpielBlockDreiI(){
     spielBlockZwei.style.display = 'none'

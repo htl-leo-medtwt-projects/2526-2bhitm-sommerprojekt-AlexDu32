@@ -1611,7 +1611,7 @@ opacity: 1;}
     font-family: text;
     width: 30vw;
     position: absolute;
-    z-index: 6;
+    z-index: 9;
     left: 36rem;
     bottom: 1rem;
 }
@@ -1634,7 +1634,16 @@ opacity: 1;}
 #sprechblase-abgeben{
     width: 40vw;
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     left: 51rem;
     top: -1rem;
+}
+#lehrer-pause{
+    font-size: 1.2rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 1000rem;
+    left: 57rem;
+    top: 9rem;
 }
