@@ -1710,3 +1710,47 @@ opacity: 1;}
     height: 100%;
     object-fit: contain;
 }
+#lebenslauf{
+    width: 68vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -4rem;
+    top: 4rem;
+}
+#lebenslauf-name{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 14rem;
+    top: 7rem;
+}
+#deinName{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 21rem;
+    top: 7rem;
+}
+#lebenslauf-datum{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 14rem;
+    top: 10rem;
+}
+#deinDatum{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.5rem;
+    font-family: text;
+    color: black;
+    left: 24rem;
+    top: 10rem;
+}
