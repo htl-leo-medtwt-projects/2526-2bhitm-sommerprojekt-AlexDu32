@@ -41,6 +41,7 @@ let spielBlockEins = document.getElementById('SpielBlockEins')
 let spielBlockZwei = document.getElementById('SpielBlockZwei')
 let spielBlockDrei = document.getElementById('SpielBlockDrei')
 let spielBlockVier = document.getElementById('SpielBlockVier')
+let spielBlockFuenf = document.getElementById('raum-auswahl')
 
 
 let Inventar = document.getElementById('InventarBlock')
@@ -248,6 +249,10 @@ function showSpielBlockVier(){
     spielBlockDrei.style.display = 'none'
     spielBlockVier.style.display = 'grid'
 }
+function showSpielBlockFuenf(){
+    spielBlockVier.style.display = 'none'
+    spielBlockFuenf.style.display = 'grid'
+}
 function showInventar(){
     spielBlockVier.style.display = 'none'
     Inventar.style.display = "grid"
@@ -291,3 +296,73 @@ function InvZuPauseU(){
     Inventar.style.display ='none'
      spielBlockVier.style.display = 'grid'
 }
+
+
+
+//
+const slider = document.getElementById("slider");
+const roomBox = document.getElementById("roomBox");
+const container = document.getElementById("RaumsAuswahlConatiner");
+const images = document.querySelectorAll("#slider img");
+
+let running = false;
+let animationFrame;
+
+let position = 0;
+let speed = 20;
+
+let selectedIndex = 0;
+
+const imageSize = images[0].offsetWidth + 20;
+const maxIndex = images.length;
+
+// 🔁 Loop-Animation
+function animate() {
+    if (!running) return;
+
+    position -= speed;
+
+    // ENDLOS LOOP
+    if (Math.abs(position) >= imageSize * maxIndex) {
+        position = 0;
+    }
+
+    slider.style.transform = `translateX(${position}px)`;
+
+    animationFrame = requestAnimationFrame(animate);
+}
+
+// START
+document.getElementById("startBtn").onclick = () => {
+    if (running) return;
+
+    running = true;
+    animate();
+};
+
+// STOP (SNAP CLEAN)
+document.getElementById("stopBtn").onclick = () => {
+    running = false;
+    cancelAnimationFrame(animationFrame);
+
+    let current = Math.round(Math.abs(position) / imageSize);
+
+    selectedIndex = current % maxIndex;
+
+    position = -(current * imageSize);
+
+    slider.style.transform = `translateX(${position}px)`;
+
+    roomBox.style.display = "block";
+    roomBox.innerHTML = "Gewählter Raum: <b>" + selectedIndex + "</b>";
+};
+
+// STARTEN
+document.getElementById("launchBtn").onclick = () => {
+    roomBox.style.display = "block";
+
+    roomBox.innerHTML =
+        selectedIndex === 0 || selectedIndex === 2
+            ? "<h2>RAUM 1</h2>"
+            : "<h2>RAUM 2</h2>";
+};

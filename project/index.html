@@ -334,9 +334,10 @@
         <div id="pauseBar"></div>
         <p id="Inventar" onclick="showInventar()">Inventar</p>
         <p id="zwischen-dings">|</p>
-        <p id="loot-vorgang">Lootvorgang beginnen</p>
+        <p id="loot-vorgang" onclick="showSpielBlockFuenf()">Lootvorgang beginnen</p>
 
     </div>
+
     <!--Invenatar Block-->
     <div id="InventarBlock">
         <img id="Inventar-back" src="img/Tischplatte.webp">
@@ -357,7 +358,34 @@
         <div id="zuruckPause"></div>
         <p id="invPauseBack" onclick="InvZuPauseU()">Zurück in die Pause</p>
     </div>
+
     <!--Spiel normal weiter-->
+
+    <div id="raum-auswahl">
+        <img id="raum-auswahl-back" src="img/raumauswahl-back.png">
+        <div id="RA-overlay"></div>
+
+        <div id="RaumsAuswahlConatiner">
+
+            <div id="slider">
+
+                <img src="img/Keller-K-1.webp" data-index="0">
+                <img src="img/Keller-K-2.png" data-index="1">
+                <img src="img/Keller-K-1.webp" data-index="0">
+                <img src="img/Keller-K-2.png" data-index="1">
+
+            </div>
+
+        </div>
+
+        <div id="controls">
+        <button id="startBtn">START</button>
+        <button id="stopBtn">STOP</button>
+        </div>
+
+        <button id="launchBtn">Starten</button>
+
+        <div id="roomBox">Kein Raum ausgewählt</div>
 
  </section>
     
