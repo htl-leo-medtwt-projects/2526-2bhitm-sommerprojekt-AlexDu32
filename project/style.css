@@ -1834,65 +1834,26 @@ opacity: 1;}
     background-color: rgba(0, 0, 0, 0.477);
 }
 
-/**/
-
-#RaumsAuswahlConatiner{
+#raum-1-betreten{
+    width: 30vw;
+    height: 7vh;
+    background-color: white;
     position: absolute;
-    z-index: 5;
-    left: 6rem;
-    top: 4rem;
-    width:30vw;
-    height:80vh;
-    overflow:hidden;
-    border: 3px solid rgb(96, 101, 123);
-    border-radius:20px;
+    z-index: 9;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 29rem;
 }
-#slider{
-    display:flex;
-    gap:20px;
-    height:100%;
-}
-
-#slider img{
-    width:30vw;
-    height:80vh;
-    object-fit:cover;
-    border-radius:15px;
-}
-
-#controls{
+#raum-1-betreten-p{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
     position: absolute;
-    z-index: 5;
-    margin-top:20px;
-    display:flex;
-    gap:10px;
+    z-index: 11;
+    left: 35rem;
+    bottom: 1rem;
 }
-
-button{
-    padding:12px 20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-#startBtn{ background:#00c853; color:white; }
-#stopBtn{ background:#ff3d00; color:white; }
-
-#launchBtn{
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    background:#2962ff;
-    color:white;
-}
-
-#roomBox{
-    margin-top:20px;
-    padding:15px;
-    background:#1e1e1e;
-    border-radius:12px;
-    width:300px;
-    text-align:center;
-    display:none;
+#Raum-Eins{
+    display: none;
 }
