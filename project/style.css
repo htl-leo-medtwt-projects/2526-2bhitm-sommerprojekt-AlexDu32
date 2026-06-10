@@ -1833,27 +1833,47 @@ opacity: 1;}
     height: 100%;
     background-color: rgba(0, 0, 0, 0.477);
 }
-
-#raum-1-betreten{
-    width: 30vw;
+#Raum-Eins{
+    display: none;
+}
+#raumWuerfel{
+    width: 20vw;
     height: 7vh;
     background-color: white;
     position: absolute;
     z-index: 9;
     border-radius: 100px;
-    bottom: 2rem;
-    left: 29rem;
+    bottom: 8rem;
+    left: 11rem;
 }
-#raum-1-betreten-p{
+#RaumWuerfeln{
     font-size: 1.4rem;
     color: black;
     font-family: text;
-    width: 30vw;
     position: absolute;
     z-index: 11;
-    left: 35rem;
-    bottom: 1rem;
+    left: 15rem;
+    bottom: 7rem;
 }
-#Raum-Eins{
+#RaumWuerfeln:hover{
+    cursor: pointer;
+}
+#wuerfel-wiese{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    left: 3rem;
+    top: 6rem;
+}
+
+
+#raum-wuerfel-bild{
     display: none;
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    left: 14rem;
+    top: 14rem;
+    z-index: 7;
 }

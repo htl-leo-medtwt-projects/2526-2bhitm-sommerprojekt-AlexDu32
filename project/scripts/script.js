@@ -57,6 +57,10 @@ let datum = "";
 let Kontostand = 0;
 
 
+// Räume
+let roomOne = document.getElementById('Raum-Eins')
+
+
 
 
 function showBlockTwo(){
@@ -253,6 +257,7 @@ function showSpielBlockFuenf(){
     spielBlockVier.style.display = 'none'
     spielBlockFuenf.style.display = 'grid'
 }
+
 function showInventar(){
     spielBlockVier.style.display = 'none'
     Inventar.style.display = "grid"
@@ -296,6 +301,44 @@ function InvZuPauseU(){
     Inventar.style.display ='none'
     spielBlockVier.style.display = 'grid'
 }
-function showRoomOne(){
 
+function showRoomOne(){
+    spi
+}
+
+// raum würfeln
+let RaumIndex = 0;
+
+function raumWuerfeln(){
+
+    let wuerfel = document.getElementById("raum-wuerfel-bild");
+
+    wuerfel.style.display = "block";
+
+    let bilder = [
+        "img/raum-1-wuerfel.png",
+        "img/raum-2-wuerfel.png"
+    ];
+
+    let speed = 50;
+
+    function drehen(){
+        let random = Math.floor(Math.random() * 2);
+
+        wuerfel.src = bilder[random];
+
+        if(speed < 500){
+
+            speed += 40;
+
+            setTimeout(drehen, speed);
+
+        }else{
+            RaumIndex = Math.floor(Math.random() * 2) + 1;
+
+            wuerfel.src = `img/raum-${RaumIndex}-wuerfel.png`;
+        }
+    }
+
+    drehen();
 }
