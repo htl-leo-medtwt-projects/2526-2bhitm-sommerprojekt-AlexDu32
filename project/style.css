@@ -2285,3 +2285,38 @@ opacity: 1;}
     left: 29rem;
     top: 11rem;
 }
+#timeBack-R2{
+    width: 19vw;
+    height: auto;
+    position: absolute;
+    z-index: 6;
+    right: 1rem;
+    top: 0rem;
+}
+#clock-R2{
+    width: 5vw;
+    height: auto;
+    border-radius: 550px;
+    position: absolute;
+    z-index: 11;
+    right: 12rem;
+    top: 3rem;
+}
+#Time-R2{
+    font-size: 2rem;
+    color: white;
+    font-family: text;
+    position: absolute;
+    z-index: 11;
+    right: 8rem;
+    top: 1.5rem;
+}
+#Raum-zwei{
+    display: none;
+}
+#klasse-zwei{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
