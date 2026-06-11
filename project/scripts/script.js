@@ -59,6 +59,7 @@ let Kontostand = 0;
 
 // Räume
 let roomOne = document.getElementById('Raum-Eins')
+let roomTwo = document.getElementById('Raum-zwei')
 
 
 
@@ -301,44 +302,41 @@ function InvZuPauseU(){
     Inventar.style.display ='none'
     spielBlockVier.style.display = 'grid'
 }
-
-function showRoomOne(){
-    spi
-}
-
 // raum würfeln
 let RaumIndex = 0;
+let wuerfel = document.getElementById("raum-wuerfel-bild");
 
-function raumWuerfeln(){
+function raumWuerfeln() {
+    RaumIndex = Math.floor(Math.random() * 2) + 1;
 
-    let wuerfel = document.getElementById("raum-wuerfel-bild");
+    wuerfel.src = `img/raum-${RaumIndex}-wuerfel.png`;
 
     wuerfel.style.display = "block";
 
-    let bilder = [
-        "img/raum-1-wuerfel.png",
-        "img/raum-2-wuerfel.png"
-    ];
+    wuerfel.classList.remove("spin");
+    void wuerfel.offsetWidth; 
+    wuerfel.classList.add("spin");
+}
 
-    let speed = 50;
-
-    function drehen(){
-        let random = Math.floor(Math.random() * 2);
-
-        wuerfel.src = bilder[random];
-
-        if(speed < 500){
-
-            speed += 40;
-
-            setTimeout(drehen, speed);
-
-        }else{
-            RaumIndex = Math.floor(Math.random() * 2) + 1;
-
-            wuerfel.src = `img/raum-${RaumIndex}-wuerfel.png`;
-        }
+function showLootingRoom(){
+    if(RaumIndex == 1){
+        showRoomOne()
+    }
+    if(RaumIndex ==2){
+        showRoomTwo()
+    }
+    if(RaumIndex==0){
+        document.getElementById('wuerfel-sprechblase').style.display ='grid'
+        document.getElementById('hinweis-wuerfel').style.display = 'grid'
     }
 
-    drehen();
+}
+function showRoomOne(){
+    roomOne.style.display = 'grid'
+    spielBlockFuenf.style.display = 'none'
+
+}
+function showRoomTwo(){
+    roomTwo.style.display = 'grid'
+    spielBlockFuenf.style.display = 'none'
 }
