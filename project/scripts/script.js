@@ -61,6 +61,16 @@ let Kontostand = 0;
 let roomOne = document.getElementById('Raum-Eins')
 let roomTwo = document.getElementById('Raum-zwei')
 
+//Klasse
+let classOne = document.getElementById('loot-1-start')
+
+
+// Einzelne Tische 
+let TableOne = document.getElementById('Tisch-1')
+let TableTwo = document.getElementById('Tisch-2')
+let TableThree = document.getElementById('Tisch-3')
+let TableFour = document.getElementById('Tisch-4')
+
 
 
 
@@ -339,4 +349,29 @@ function showRoomOne(){
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
+}
+
+
+function goBackToClassOne(){
+    TableOne.style.display ='none'
+    TableTwo.style.display ='none'
+    TableThree.style.display ='none'
+    TableFour.style.display ='none'
+    classOne.style.display = 'grid'
+}
+
+// einzelne Tische anzeigen
+function showTableOne(){
+    classOne.style.display = 'none'
+    TableOne.style.display = 'grid'
+}
+function showTableTwo(){
+    classOne.style.display = 'none'
+    TableTwo.style.display = 'grid'
+}
+function showTableThree(){
+
+}
+function showTableFour(){
+
 }

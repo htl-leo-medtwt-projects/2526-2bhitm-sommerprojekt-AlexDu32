@@ -2005,4 +2005,156 @@ opacity: 1;}
     cursor: pointer;
 }
 
+/*Tische / Plätze*/
+#Tisch-1{
+    display: none;
+}
+#Boden-T-1{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-1{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -10rem;
+}
+#rucksack-looten{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+#federschachtel-T-1{
+    width: 55vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    left: 20rem;
+    top: 3rem;
+}
+#kugelschreiber-T-1{
+    width: 30vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 15;
+    left: 29rem;
+    top: 11rem;
+}
+.kugelschreiber-points:hover{
+    cursor: pointer;
+}
+.radiergummi-points:hover{
+    cursor: pointer;
+}
+#radiergummi-T-1{
+    width: 14vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 15;
+    left: 28rem;
+    top: 14rem;
+}
+.lapKabel-points:hover{
+    cursor: pointer;
+}
+#laptopKabel-T-1{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    right: 7rem;
+    top: 4rem;
+}
+.zuruckKlasseEins{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.7rem;
+    right: 5rem;
+    bottom: 0.4rem;
+    color: white;
+    font-family: text;
+}
+.zuruckKlasseEins:hover{
+    cursor: pointer;
+}
+.zurckKlasseBack{
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    z-index: 6;
+    right: 1rem;
+    bottom: -1rem;
 
+}
+
+#Tisch-2{
+    display: none;
+}
+#Boden-T-2{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-2{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -7rem;
+}
+#rucksack-looten-2{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+.Jausenbox-points:hover{
+    cursor: pointer;
+}
+#jausenbox-T-2{
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    transform: rotate(-15deg);
+    left: 6rem;
+    top: 7rem;
+}
+#laptopKabel-T-2{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    right: 10rem;
+    top: 9rem;
+}
+.leuchtstift-points:hover{
+    cursor: pointer;
+}
+#leuchtstift-T-2-rot{
+    width: 15vw;
+    height: auto;
+    transform: rotate(10deg);
+    position: absolute;
+    z-index: 15;
+    left: 35rem;
+    top: 10rem;
+}
+#leuchtstift-T-2-blau{
+    width: 15vw;
+    height: auto;
+    transform: rotate(10deg);
+    position: absolute;
+    z-index: 15;
+    left: 30rem;
+    top: 12rem;
+}
