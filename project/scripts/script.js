@@ -345,6 +345,11 @@ function showRoomOne(){
     roomOne.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
 
+    TableOne.style.display = 'none'
+    TableTwo.style.display = 'none'
+    TableThree.style.display = 'none'
+    TableFour.style.display = 'none'
+
 }
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
@@ -370,8 +375,10 @@ function showTableTwo(){
     TableTwo.style.display = 'grid'
 }
 function showTableThree(){
-
+    classOne.style.display ='none'
+    TableThree.style.display = 'grid'
 }
 function showTableFour(){
-
+    classOne.style.display ='none'
+    TableFour.style.display = 'grid'
 }

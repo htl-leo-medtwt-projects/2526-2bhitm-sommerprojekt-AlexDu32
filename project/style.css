@@ -2158,3 +2158,130 @@ opacity: 1;}
     left: 30rem;
     top: 12rem;
 }
+
+#Tische-3{
+    display: none;
+}
+#Boden-T-3{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-3{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -12rem;
+}
+#rucksack-looten-3{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+#federschachtel-T-3{
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    left: 19rem;
+    top: 3rem;
+}
+#leuchtstift-T-3-rot{
+    width: 18vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 15;
+    left: 33rem;
+    top: 12rem;
+}
+#schraubenzieher-T-3{
+    width: 20vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 15;
+    left: 30rem;
+    top: 4rem;
+}
+.schraubenzieher-points:hover{
+    cursor: pointer;
+}
+.taschenrechenr-points:hover{
+    cursor: pointer;
+}
+#taschenrechner-T-3{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 9rem;
+    top: 6rem;
+}
+
+#Tische-4{
+    display: none;
+}
+#Boden-T-4{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-4{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -12rem;
+}
+#rucksack-looten-4{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+#federschachtel-T-4{
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    left: 19rem;
+    top: 3rem;
+}
+#tixo-points:hover{
+    cursor: pointer;
+}
+#tixo-T-4{
+    position: absolute;
+    width: 14vw;
+    height: auto;
+    z-index: 16;
+    left: 21rem;
+    top: 5rem;
+}
+.geodreieck-points:hover{
+    cursor: pointer;
+}
+#geodreieck-T-4{
+    width: 20vw;
+    height: auto;
+    transform: rotate(-90deg);
+    position: absolute;
+    z-index: 16;
+    left: 43rem;
+    top: 8rem;
+}
+#kugelschreiber-T-4{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 29rem;
+    top: 11rem;
+}
