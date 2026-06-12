@@ -2320,3 +2320,172 @@ opacity: 1;}
     object-fit: cover;
     transform: scaleX(-1);
 }
+
+#pfeil-fuenf{
+    width: 20vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 12;
+    left: 14rem;
+    top: 15rem;
+}
+#pfeil-sechs{
+    width: 20vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 12;
+    left: 40rem;
+    top: 16rem;
+}
+#pfeil-sieben{
+    width: 20vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 12;
+    left: 50rem;
+    top: 22rem;
+}
+#pfeil-acht{
+    width: 20vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 12;
+    left: 30rem;
+    top: 22rem;
+}
+#Tisch-5{
+    display: none;
+}
+#Boden-T-5{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-5{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -12rem;
+}
+#rucksack-looten-5{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+#federschachtel-T-5{
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    left: 21rem;
+    top: 3rem;
+}
+.tipex-points:hover{
+    cursor: pointer;
+}
+#tipex-T-5{
+    width: 15vw;
+    height: auto;
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: 15;
+    left: 32rem;
+    top: 16rem;
+}
+.tackermaschine-points:hover{
+    cursor: pointer;
+}
+#tackermaschine-T-5{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+}
+.spitzer-points:hover{
+    cursor: pointer;
+}
+#spitzer-T-5{
+    width: 7vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    transform: rotate(90deg);
+    left: 50rem;
+    top: 9rem;
+}
+#Tisch-6{
+    display: none;
+}
+#Boden-T-6{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-6{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -9rem;
+}
+#rucksack-looten-6{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+.maus-points:hover{
+    cursor: pointer;
+}
+#maus-T-6{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 52rem;
+    top: 9rem;
+}
+.laptop-points:hover{
+    cursor: pointer;
+}
+#laptop-T-6{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 18rem;
+    top: 2em;
+}
+#Tisch-7{
+    display: none;
+}
+#Boden-T-7{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-7{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -13rem;
+}
+#rucksack-looten-7{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}

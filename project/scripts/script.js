@@ -63,6 +63,7 @@ let roomTwo = document.getElementById('Raum-zwei')
 
 //Klasse
 let classOne = document.getElementById('loot-1-start')
+let classTwo = document.getElementById('loot-2-start')
 
 
 // Einzelne Tische 
@@ -70,6 +71,11 @@ let TableOne = document.getElementById('Tisch-1')
 let TableTwo = document.getElementById('Tisch-2')
 let TableThree = document.getElementById('Tisch-3')
 let TableFour = document.getElementById('Tisch-4')
+
+let TableFive = document.getElementById('Tisch-5')
+let TableSix = document.getElementById('Tisch-6')
+let TableSeven = document.getElementById('Tisch-7')
+let TableEight = document.getElementById('Tisch-8')
 
 
 
@@ -381,4 +387,32 @@ function showTableThree(){
 function showTableFour(){
     classOne.style.display ='none'
     TableFour.style.display = 'grid'
+}
+
+
+
+function goBackToClassTwo(){
+    TableFive.style.display ='none'
+    TableSix.style.display ='none'
+    TableSeven.style.display ='none'
+    TableEight.style.display ='none'
+    classTwo.style.display = 'grid'
+}
+
+// Einzlne Tische anziegen Raum2
+function showTableFive(){
+    classTwo.style.display = 'none'
+    TableFive.style.display = 'grid'
+}
+function showTableSix(){
+    classTwo.style.display = 'none'
+    TableSix.style.display = 'grid'
+}
+function showTableSeven(){
+    classTwo.style.display ='none'
+    TableSeven.style.display = 'grid'
+}
+function showTableEight(){
+    classTwo.style.display ='none'
+    TableEight.style.display = 'grid'
 }
