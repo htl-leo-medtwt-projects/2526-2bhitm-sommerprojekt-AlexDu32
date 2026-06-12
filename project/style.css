@@ -2489,3 +2489,97 @@ opacity: 1;}
     left: -5rem;
     bottom: -2rem;
 }
+#federschachtel-T-7{
+    width: 55vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    left: 20rem;
+    top: 3rem;
+}
+#zirekl-points:hover{
+    cursor: pointer;
+}
+#zirkel-T-7{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    transform: rotate(20deg);
+    left: 52rem;
+    top: 5rem;
+}
+#kugelschreiber-T-7{
+    width: 15vw;
+    height: auto;
+    transform: rotate(50deg);
+    position: absolute;
+    z-index: 15;
+    left: 49rem;
+    bottom: 4rem;
+}
+#radiergummi-T-7{
+    width: 14vw;
+    height: auto;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 15;
+    left: 32rem;
+    top: 15rem; 
+}
+
+#Tisch-8{
+    display: none;
+}
+#Boden-T-8{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#Tisch-T-8{
+    width: 100vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 5;
+    margin-top: -10rem;
+}
+#rucksack-looten-8{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+    left: -5rem;
+    bottom: -2rem;
+}
+.brille-points:hover{
+    cursor: pointer;
+}
+#brille-T-8{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 14rem;
+    transform: rotate(-20deg);
+    top: 6rem;
+}
+.uhustick-points:hover{
+    cursor: pointer;
+}
+#uhuStick-T-8{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    left: 29rem;
+    top: 9rem;
+}
+#schraubenzieher-T-8{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 15;
+    transform: rotate(15deg);
+    left: 53rem;
+    top: 4rem;
+}
