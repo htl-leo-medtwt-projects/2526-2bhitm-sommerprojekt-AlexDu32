@@ -1772,6 +1772,24 @@ opacity: 1;}
     left: 23rem;
     top: 13rem;
 }
+#RucksackCapacity{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 14rem;
+    top: 16rem;
+}
+#deineKapazitaet{
+    position: absolute;
+    z-index: 7;
+    font-size: 1.4rem;
+    font-family: text;
+    color: black;
+    left: 28rem;
+    top: 16rem;
+}
 #Verkaufslog-buch{
     width: 30vw;
     height: auto;
@@ -2582,4 +2600,44 @@ opacity: 1;}
     transform: rotate(15deg);
     left: 53rem;
     top: 4rem;
+}
+/*Kurzer rucksack peek*/
+#preis-eins{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 5;
+    font-family: text;  
+    left: 60rem;
+    top: 10rem;
+}
+#preis-zwei{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 5;
+    font-family: text;  
+    left: 36.5rem;
+    top: 24rem;
+}
+/**/
+.achtung{
+    display: none;
+    position: absolute;
+    z-index: 15;
+    font-size: 3rem;
+    color: rgb(189, 0, 0);
+    left: 20rem;
+    top: -1rem;
+    font-family: text;
+}
+#shop-achtung{
+    display: none;
+    position: absolute;
+    z-index: 15;
+    font-size: 3rem;
+    color: rgb(189, 0, 0);
+    left: 20rem;
+    top: -1rem;
+    font-family: text;
 }

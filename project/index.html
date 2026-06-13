@@ -233,10 +233,14 @@
     </div>
 
     <div id="rucksackBlock">
+        <p id="shop-achtung">Achtung: Nicht genug Geld.</p>
         <img id="rucksack-back" src="img/Rucksaecke-back.webp">
 
         <img id="hangingSign" src="img/hangingSign.png">
         <p id="rucksack-verlassen" onclick="rucksackeBack()">Verlassen</p>
+
+        <p id="preis-eins">100€</p>
+        <p id="preis-zwei">400€</p>
 
         <div id="locked-1"></div>
         <div id="locked-2"></div>
@@ -251,8 +255,8 @@
         <img id="rucksack-5" src="img/RucksackLVLMAX.png">
 
         <img class="kaufen-button" id="kaufen-1" src="img/imBesitz.webp">
-        <img class="kaufen-button" id="kaufen-2" src="img/shop-kaufen.webp">
-        <img class="kaufen-button" id="kaufen-3" src="img/shop-kaufen.webp">
+        <img class="kaufen-button" onclick="kaufeRucksackLvl1() " id="kaufen-2" src="img/shop-kaufen.webp">
+        <img class="kaufen-button" onclick="kaufeRucksackLvl2() " id="kaufen-3" src="img/shop-kaufen.webp">
         <img class="kaufen-button" id="kaufen-4" src="img/shop-kaufen.webp">
         <img class="kaufen-button" id="kaufen-5" src="img/shop-kaufen.webp">
     </div>
@@ -346,10 +350,12 @@
         <p id="lebenslauf-name">Name:</p>
         <p id="lebenslauf-datum">Konto erstellt:</p>
         <p id="Kontostand">Kontostand:</p>
+        <p id="RucksackCapacity">Rucksack Kapazität:</p>
 
         <p id="deinName"></p>
         <p id="deinDatum"></p>
         <p id="deinKontostand"></p>
+        <p id="deineKapazitaet"></p>
 
         <img onclick="showInvVerkaufslog()" id="Verkaufslog-buch" src="img/verkaufslog-buch.png">
         <img onclick="showInvShop()" id="handyZumShop" src="img/zumShophandy.png">
@@ -388,6 +394,7 @@
         <img id="timeBack" src="img/timeBack.png">
         <img id="clock" src="img/clock.gif">
         <p id="Time">20</p>
+        <p class="achtung">Achtung: Dein Rucksack ist voll!!</p>
         
 
         <div id="loot-1-start">
@@ -407,9 +414,9 @@
             <img id="federschachtel-T-1" src="img/FederSchachtel.webp">
 
 
-            <img id="kugelschreiber-T-1" class="kugelschreiber-points" src="img/Kugelschreiber.webp">
-            <img id="radiergummi-T-1" class="radiergummi-points" src="img/Radiergummi.webp">
-            <img id="laptopKabel-T-1" class="lapKabel-points" src="img/laptop-ladekabel.webp">
+            <img id="kugelschreiber-T-1" class="kugelschreiber-points"  onclick="lootItem(this, 1.20, 1)" src="img/Kugelschreiber.webp">
+            <img id="radiergummi-T-1" class="radiergummi-points"  onclick="lootItem(this, 0.5, 1)" src="img/Radiergummi.webp">
+            <img id="laptopKabel-T-1" class="lapKabel-points"  onclick="lootItem(this, 15, 6)" src="img/laptop-ladekabel.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassOne()" >Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -420,10 +427,10 @@
             <img id="Tisch-T-2" src="img/Tischplatte.webp">
             <img id="rucksack-looten-2" src="img/müllsack.webp">
 
-            <img id="jausenbox-T-2" class="Jausenbox-points" src="img/Jausenbox.webp">
-            <img id="laptopKabel-T-2" class="lapKabel-points" src="img/laptop-ladekabel.webp">
-            <img id="leuchtstift-T-2-rot" class="leuchtstift-points" src="img/Leuchtstift-eins.webp">
-            <img id="leuchtstift-T-2-blau" class="leuchtstift-points" src="img/Leuchtstift.webp">
+            <img id="jausenbox-T-2" class="Jausenbox-points"  onclick="lootItem(this, 10, 5)" src="img/Jausenbox.webp">
+            <img id="laptopKabel-T-2" class="lapKabel-points"  onclick="lootItem(this, 15, 6)" src="img/laptop-ladekabel.webp">
+            <img id="leuchtstift-T-2-rot" class="leuchtstift-points"  onclick="lootItem(this, 1, 1)" src="img/Leuchtstift-eins.webp">
+            <img id="leuchtstift-T-2-blau" class="leuchtstift-points" onclick="lootItem(this, 1, 1)" src="img/Leuchtstift.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassOne()" >Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -436,9 +443,9 @@
 
             <img id="federschachtel-T-3" src="img/FederSchachtel.webp">
 
-            <img id="leuchtstift-T-3-rot" class="leuchtstift-points" src="img/Leuchtstift-eins.webp">
-            <img id="schraubenzieher-T-3" class="schraubenzieher-points" src="img/Schraubenzieher.webp">
-            <img id="taschenrechner-T-3" class="taschenrechenr-points" src="img/Taschnrechner.webp">
+            <img id="leuchtstift-T-3-rot" class="leuchtstift-points" onclick="lootItem(this, 1, 1)" src="img/Leuchtstift-eins.webp">
+            <img id="schraubenzieher-T-3" class="schraubenzieher-points" onclick="lootItem(this, 3.20, 3)" src="img/Schraubenzieher.webp">
+            <img id="taschenrechner-T-3" class="taschenrechenr-points" onclick="lootItem(this, 26, 13)" src="img/Taschnrechner.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassOne()" >Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -452,9 +459,9 @@
 
             <img id="federschachtel-T-4" src="img/FederSchachte-zwei.webp">
 
-            <img id="tixo-T-4" class="tixo-points" src="img/tixo.webp">
-            <img id="geodreieck-T-4" class="geodreieck-points" src="img/geodreieck.webp">
-            <img id="kugelschreiber-T-4" class="kugelschreiber-points" src="img/Kugelschreiber.webp">
+            <img id="tixo-T-4" class="tixo-points" onclick="lootItem(this, 8, 2)" src="img/tixo.webp">
+            <img id="geodreieck-T-4" class="geodreieck-points" onclick="lootItem(this, 3, 5)" src="img/geodreieck.webp">
+            <img id="kugelschreiber-T-4" class="kugelschreiber-points" onclick="lootItem(this, 1.20, 1)" src="img/Kugelschreiber.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassOne()" >Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -469,6 +476,7 @@
         <img id="timeBack-R2" src="img/timeBack.png">
         <img id="clock-R2" src="img/clock.gif">
         <p id="Time-R2">20</p>
+        <p class="achtung">Achtung: Dein Rucksack ist voll!!</p>
 
         <div id="loot-2-start">
             <img id="klasse-zwei" src="img/Keller-K-2.png">
@@ -480,15 +488,16 @@
         </div>
 
         <div id="Tisch-5">
+            
             <img id="Boden-T-5" src="img/Boden.webp">
             <img id="Tisch-T-5" src="img/Tischplatte.webp">
             <img id="rucksack-looten-5" src="img/müllsack.webp">
 
             <img id="federschachtel-T-5" src="img/FederSchachte-zwei.webp">
 
-            <img id="tipex-T-5" class="tipex-points" src="img/tipex.webp">
-            <img id="tackermaschine-T-5" class="tackermaschine-points" src="img/tackermaschine.webp">
-            <img id="spitzer-T-5" class="spitzer-points" src="img/spitzer.webp">
+            <img id="tipex-T-5" class="tipex-points" onclick="lootItem(this, 8, 2)" src="img/tipex.webp">
+            <img id="tackermaschine-T-5" class="tackermaschine-points" onclick="lootItem(this, 15, 8)" src="img/tackermaschine.webp">
+            <img id="spitzer-T-5" class="spitzer-points" onclick="lootItem(this, 2, 2)" src="img/spitzer.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassTwo()">Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -500,8 +509,8 @@
             <img id="Tisch-T-6" src="img/Tischplatte.webp">
             <img id="rucksack-looten-6" src="img/müllsack.webp">
 
-            <img id="maus-T-6" class="maus-points" src="img/maus.webp">
-            <img id="laptop-T-6" class="laptop-points" src="img/laptop.webp">
+            <img id="maus-T-6" class="maus-points" onclick="lootItem(this, 15, 8)" src="img/maus.webp">
+            <img id="laptop-T-6" class="laptop-points" onclick="lootItem(this, 40, 20)" src="img/laptop.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassTwo()">Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -515,9 +524,9 @@
 
             <img id="federschachtel-T-7" src="img/FederSchachtel.webp">
 
-            <img id="zirkel-T-7" class="zirekl-points" src="img/Zirkel.webp">
-            <img id="kugelschreiber-T-7" class="kugelschreiber-points" src="img/Kugelschreiber.webp">
-            <img id="radiergummi-T-7" class="radiergummi-points" src="img/Radiergummi.webp">
+            <img id="zirkel-T-7" class="zirekl-points" onclick="lootItem(this, 25, 8)" src="img/Zirkel.webp">
+            <img id="kugelschreiber-T-7" class="kugelschreiber-points" onclick="lootItem(this, 1.20, 1)" src="img/Kugelschreiber.webp">
+            <img id="radiergummi-T-7" class="radiergummi-points" onclick="lootItem(this, 0.5, 1)" src="img/Radiergummi.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassTwo()">Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">
@@ -529,9 +538,9 @@
             <img id="Tisch-T-8" src="img/Tischplatte.webp">
             <img id="rucksack-looten-8" src="img/müllsack.webp">
 
-            <img id="brille-T-8" class="brille-points" src="img/Brille.webp">
-            <img id="uhuStick-T-8" class="uhustick-points" src="img/UhuStick.webp">
-            <img id="schraubenzieher-T-8" class="schraubenzieher-points" src="img/Schraubenzieher.webp">
+            <img id="brille-T-8" class="brille-points" onclick="lootItem(this, 25, 6)" src="img/Brille.webp">
+            <img id="uhuStick-T-8" class="uhustick-points" onclick="lootItem(this, 1.20, 2)" src="img/UhuStick.webp">
+            <img id="schraubenzieher-T-8" class="schraubenzieher-points" onclick="lootItem(this, 3.20, 3)" src="img/Schraubenzieher.webp">
 
             <p class="zuruckKlasseEins" onclick="goBackToClassTwo()">Zurück</p>
             <img class="zurckKlasseBack" src="img/timeBack.png">  

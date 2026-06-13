@@ -50,11 +50,17 @@ let Inventar = document.getElementById('InventarBlock')
 let LebenslaufName = document.getElementById('deinName')
 let LebenslaufDatum = document.getElementById('deinDatum')
 let LebenslaufKontostand = document.getElementById('deinKontostand')
+let LebensLaufKapazitaet = document.getElementById('deineKapazitaet')
 
 // Spiel wichtige variablen
+let backpackCapacity = 20;
 let SpielerName = "";
 let datum = "";
 let Kontostand = 0;
+let backcapacityInv = "";
+
+let rucksackLvl1Gekauft = false;
+let rucksackLvl2Gekauft = false;
 
 
 // Räume
@@ -265,6 +271,7 @@ function showSpielBlockDreiI(){
     
     SpielerName = document.getElementById('name-eingabe').value
     datum = document.getElementById('datum-eingabe').value
+    backcapacityInv = backpackCapacity
 }
 function showSpielBlockVier(){
     spielBlockDrei.style.display = 'none'
@@ -283,6 +290,7 @@ function showInventar(){
     LebenslaufDatum.innerHTML = datum
     LebenslaufName.innerHTML = SpielerName
     LebenslaufKontostand.innerHTML = Kontostand
+    LebensLaufKapazitaet.innerHTML = backcapacityInv
 }
 
 function showInvVerkaufslog(){
@@ -389,8 +397,6 @@ function showTableFour(){
     TableFour.style.display = 'grid'
 }
 
-
-
 function goBackToClassTwo(){
     TableFive.style.display ='none'
     TableSix.style.display ='none'
@@ -415,4 +421,93 @@ function showTableSeven(){
 function showTableEight(){
     classTwo.style.display ='none'
     TableEight.style.display = 'grid'
+}
+//************
+// Spiel logik
+//************
+let lootedSum = 0;
+let currentWeight = 0;
+let warnings = document.querySelectorAll(".achtung");
+
+function lootItem(item, value, weight){
+
+    if(currentWeight + weight > backpackCapacity){
+
+        warnings.forEach(warning => {
+            warning.style.display = "block";
+        });
+
+        setTimeout(() => {
+            warnings.forEach(warning => {
+                warning.style.display = "none";
+            });
+        }, 2000);
+
+        return;
+    }
+
+    lootedSum += value;
+    currentWeight += weight;
+
+    item.style.display = "none";
+}
+// Backpack upgraden
+function showNoMoneyWarning(){
+
+    let warning = document.getElementById("shop-achtung");
+
+    warning.style.display = "block";
+
+    setTimeout(() => {
+        warning.style.display = "none";
+    }, 2000);
+}
+
+function kaufeRucksackLvl1(){
+
+    if(rucksackLvl1Gekauft){
+        return;
+    }
+
+     if(Kontostand < 100){
+        showNoMoneyWarning();
+        return;
+    }
+
+    if(Kontostand >= 100){
+
+        Kontostand -= 100;
+        backpackCapacity = 50;
+
+        rucksackLvl1Gekauft = true;
+
+        document.getElementById("kaufen-2").src = "img/imBesitz.webp";
+
+        LebenslaufKontostand.innerHTML = Kontostand;
+
+    }
+    
+}
+
+function kaufeRucksackLvl2(){
+
+    if(rucksackLvl2Gekauft){
+        return;
+    }
+    if(Kontostand < 400){
+        showNoMoneyWarning();
+        return;
+    }
+
+    if(Kontostand >= 400){
+
+        Kontostand -= 400;
+        backpackCapacity = 80;
+
+        rucksackLvl2Gekauft = true;
+
+        document.getElementById("kaufen-3").src = "img/imBesitz.webp";
+
+        LebenslaufKontostand.innerHTML = Kontostand;
+    }
 }
