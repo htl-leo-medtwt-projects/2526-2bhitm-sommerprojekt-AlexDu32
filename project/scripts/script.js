@@ -364,10 +364,14 @@ function showRoomOne(){
     TableThree.style.display = 'none'
     TableFour.style.display = 'none'
 
+    startTimer()
+
 }
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
+
+    startTimer()
 }
 
 
@@ -451,7 +455,41 @@ function lootItem(item, value, weight){
 
     item.style.display = "none";
 }
+// Timer
+let timer;
+let timeLeft = 20;
+
+function startTimer(){
+
+    clearInterval(timer);
+
+    timeLeft = 20;
+
+    document.getElementById("Time").innerHTML = timeLeft;
+    document.getElementById("Time-R2").innerHTML = timeLeft;
+
+    timer = setInterval(() => {
+
+        timeLeft--;
+
+        document.getElementById("Time").innerHTML = timeLeft;
+        document.getElementById("Time-R2").innerHTML = timeLeft;
+
+        if(timeLeft <= 0){
+
+            clearInterval(timer);
+
+            alert("Zeit abgelaufen!");
+
+            // Hier später Runde verloren
+        }
+
+    }, 1000);
+
+}
 // Backpack upgraden
+
+
 function showNoMoneyWarning(){
 
     let warning = document.getElementById("shop-achtung");
@@ -484,7 +522,6 @@ function kaufeRucksackLvl1(){
         document.getElementById("kaufen-2").src = "img/imBesitz.webp";
 
         LebenslaufKontostand.innerHTML = Kontostand;
-
     }
     
 }
