@@ -2641,3 +2641,19 @@ opacity: 1;}
     top: -1rem;
     font-family: text;
 }
+#lehrer-kommt-back{
+    width: 14vw;
+    height: auto;
+    position: absolute;
+    z-index: 6;
+    right: 1.5rem;
+    top: 5rem;
+}
+#lehrer-icon{
+    position: absolute;
+    z-index: 15;
+    width: 12vw;
+    height: auto;
+    right: 7rem;
+    top: 6rem;
+}
