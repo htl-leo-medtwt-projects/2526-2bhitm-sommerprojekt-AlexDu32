@@ -2796,7 +2796,7 @@ opacity: 1;}
     font-family: text;
     width: 30vw;
     position: absolute;
-    z-index: 9;
+    z-index: 90;
     left: 43rem;
     bottom: 1rem; 
 }
