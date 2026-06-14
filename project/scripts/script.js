@@ -88,6 +88,7 @@ let hideScreenR1 = document.getElementById("versteckenScreen-1");
 let hideScreenR2 = document.getElementById("versteckenScreen-2");
 
 let madeItScreenOne = document.getElementById('rechtzeitig-entkommen')
+let madeItScreenTwo = document.getElementById('rechtzeitig-entkommen-1')
 
 
 
@@ -658,5 +659,22 @@ function getOutOne(){
     madeItScreenOne.style.display = 'grid'
     classOne.style.display = 'none'
     // Logik für INevntar + reset
+}
+function getOutTwo(){
+    madeItScreenTwo.style.display = 'grid'
+    classTwo.style.display = 'none'
+    // Logik für Inevntar + reset
+}
 
+function madeItToInventarOne(){
+    madeItScreenOne.style.display ='none'
+    Inventar.style.display = 'grid'
+
+    // Logik das im Inventar alles angeziegt wird 
+}
+function madeItToInventarTwo(){
+    madeItScreenTwo.style.display ='none'
+    Inventar.style.display = 'grid'
+
+    // Logik das im Inventar alles angeziegt wird 
 }
