@@ -2959,3 +2959,55 @@ opacity: 1;}
     top: 12rem;
     transform: scaleX(-1);
 }
+
+#lehrer-erwischt{
+    display: none;
+}
+#erwischt-back{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#erwischt-sprachblase{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    top: 6rem;
+    left: 40rem;
+}
+#erwischt-text{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 90;
+    left: 46rem;
+    top: 11.5rem;
+}
+
+#lehrer-erwischt-1{
+    display: none;
+}
+#erwischt-back-1{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+#erwischt-sprachblase-1{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 14;
+    top: 6rem;
+    left: 40rem;
+}
+#erwischt-text-1{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 90;
+    left: 46rem;
+    top: 11.5rem;
+}

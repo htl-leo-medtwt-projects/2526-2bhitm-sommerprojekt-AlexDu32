@@ -62,6 +62,9 @@ let backcapacityInv = "";
 let rucksackLvl1Gekauft = false;
 let rucksackLvl2Gekauft = false;
 
+let isHidden = false;
+
+
 
 // Räume
 let roomOne = document.getElementById('Raum-Eins')
@@ -89,6 +92,9 @@ let hideScreenR2 = document.getElementById("versteckenScreen-2");
 
 let madeItScreenOne = document.getElementById('rechtzeitig-entkommen')
 let madeItScreenTwo = document.getElementById('rechtzeitig-entkommen-1')
+
+let verlorenScreenR1 = document.getElementById('lehrer-erwischt')
+let verlorenScreenR2 = document.getElementById('lehrer-erwischt-1')
 
 
 
@@ -373,6 +379,8 @@ function showRoomOne(){
     TableThree.style.display = 'none'
     TableFour.style.display = 'none'
 
+    isHidden = false
+
     startTimer();
     startTeacherBarOne()
 
@@ -380,6 +388,8 @@ function showRoomOne(){
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
+
+    isHidden = false
 
     startTeacherBarTwo()
     startTimer();
@@ -565,7 +575,6 @@ function kaufeRucksackLvl2(){
 let teacherProgress = 0;
 let teacherReturnTime;
 let teacherBarInterval;
-
 let teacherHasArrived = false;
 
 function startTeacherBarOne(){
@@ -634,47 +643,112 @@ function startTeacherBarTwo(){
 function hideRoomOne(){
     classOne.style.display = 'none'
     hideScreenR1.style.display = 'grid'
-    //Logik mit lehrer fehlt hier noch
+
+     isHidden = true;
+    
 
 }
 function hideRoomTwo(){
     classTwo.style.display = 'none'
     hideScreenR2.style.display = 'grid'
-    //Logik mit lehrer fehlt hier noch
+    
+     isHidden = true;
     
 }
 
 function goBackFromHidingOne(){
+
+    isHidden = false;
     classOne.style.display = 'grid'
     hideScreenR1.style.display = 'none'
 }
 
 function goBackFromHidingTwo(){
+
+    isHidden = false;
     classTwo.style.display = 'grid'
     hideScreenR2.style.display = 'none'
 }
 
 // Entkommen
 function getOutOne(){
-    madeItScreenOne.style.display = 'grid'
-    classOne.style.display = 'none'
-    // Logik für INevntar + reset
+
+    endRound();
+
+    madeItScreenOne.style.display = 'grid';
+    classOne.style.display = 'none';
+
 }
 function getOutTwo(){
-    madeItScreenTwo.style.display = 'grid'
-    classTwo.style.display = 'none'
-    // Logik für Inevntar + reset
-}
 
+    endRound();
+
+    madeItScreenTwo.style.display = 'grid';
+    classTwo.style.display = 'none';
+
+}
 function madeItToInventarOne(){
-    madeItScreenOne.style.display ='none'
-    Inventar.style.display = 'grid'
 
-    // Logik das im Inventar alles angeziegt wird 
+    updateInventar();
+
+    madeItScreenOne.style.display ='none';
+    Inventar.style.display = 'grid';
+
+}function madeItToInventarTwo(){
+
+    updateInventar();
+
+    madeItScreenTwo.style.display ='none';
+    Inventar.style.display = 'grid';
+
 }
-function madeItToInventarTwo(){
-    madeItScreenTwo.style.display ='none'
-    Inventar.style.display = 'grid'
 
-    // Logik das im Inventar alles angeziegt wird 
+function endRound(){
+
+    clearInterval(timer);
+    clearInterval(teacherBarInterval);
+
+    teacherProgress = 0;
+    teacherHasArrived = false;
+
+    currentWeight = 0;
+
+}
+function updateInventar(){
+
+    Kontostand += lootedSum;
+
+    LebenslaufDatum.innerHTML = datum;
+    LebenslaufName.innerHTML = SpielerName;
+    LebenslaufKontostand.innerHTML = Kontostand;
+    LebensLaufKapazitaet.innerHTML = backpackCapacity;
+
+    lootedSum = 0;
+
+}
+
+function teacherArrives(){
+
+    if(isHidden){
+        clearInterval(teacherBarInterval);
+
+        return;
+    }
+    clearInterval(timer);
+    clearInterval(teacherBarInterval);
+
+    if(RaumIndex == 1){
+
+        classOne.style.display = 'none';
+        verlorenScreenR1.style.display = 'grid';
+
+    }
+
+    if(RaumIndex == 2){
+
+        classTwo.style.display = 'none';
+        verlorenScreenR2.style.display = 'grid';
+
+    }
+
 }
