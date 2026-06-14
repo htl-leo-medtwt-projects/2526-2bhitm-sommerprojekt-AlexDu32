@@ -83,7 +83,10 @@ let TableSix = document.getElementById('Tisch-6')
 let TableSeven = document.getElementById('Tisch-7')
 let TableEight = document.getElementById('Tisch-8')
 
-// Verstecken screen
+// Ende screens
+let hideScreenR1 = document.getElementById("versteckenScreen-1");
+let hideScreenR2 = document.getElementById("versteckenScreen-2");
+
 
 
 
@@ -368,7 +371,7 @@ function showRoomOne(){
     TableFour.style.display = 'none'
 
     startTimer();
-    startTeacherBar();
+    startTeacherBar(0);
 
 }
 function showRoomTwo(){
@@ -376,7 +379,7 @@ function showRoomTwo(){
     spielBlockFuenf.style.display = 'none'
 
     startTimer();
-    startTeacherBar();
+    startTeacherBar(1);
 }
 
 
@@ -555,60 +558,75 @@ function kaufeRucksackLvl2(){
 }
 
 
-// Lehrer kommt (Chat)
+// Lehrer kommt ( teilweise Chat)
 let teacherProgress = 0;
 let teacherReturnTime;
 let teacherBarInterval;
+let teacherFills = document.querySelectorAll(".teacher-fill");
 
 let teacherHasArrived = false;
 
-function startTeacherBar(){
+function startTeacherBar(roomIndex){
 
     clearInterval(teacherBarInterval);
 
     teacherProgress = 0;
     teacherHasArrived = false;
 
-    let teacherFill = document.getElementById("teacher-fill");
+    let teacherFill = teacherFills[roomIndex];
 
     teacherFill.style.width = "0%";
 
     teacherBarInterval = setInterval(() => {
 
         teacherProgress += Math.random() * 20;
-
         teacherFill.style.width = teacherProgress + "%";
 
         if(teacherProgress >= 100){
 
             teacherFill.style.width = "100%";
-
             clearInterval(teacherBarInterval);
-
             teacherHasArrived = true;
-
             teacherArrives();
         }
 
     }, 1000);
 }
-
 // Selber
 function verstecken(){
 
     if(!teacherHasArrived){
         return;
     }
+    roomOne.style.display = 'none'
+    roomTwo.style.display = 'none'
+
+    if(RaumIndex == 1){
+        hideScreenR1.style.display = 'grid'
+    }
+    if(RaumIndex == 2){
+        hideScreenR2.style.display = 'grid'
+    }
 
     clearInterval(teacherBarInterval);
-
     document.getElementById("teacher-fill").style.width = "0%";
-
     teacherHasArrived = false;
+}
 
+function goBackFromHiding(){
+
+    hideScreenR1.style.display = "none";
+    hideScreenR2.style.display = "none";
+
+    if(RaumIndex == 1){
+        classOne.style.display = "grid";
+    }
+
+    if(RaumIndex == 2){
+        classTwo.style.display = "grid";
+    }
 }
 
 function teacherArrives(){
-    document.getElementById("verstecken-screen").style.display = "grid";
 
 }
