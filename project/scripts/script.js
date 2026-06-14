@@ -87,6 +87,8 @@ let TableEight = document.getElementById('Tisch-8')
 let hideScreenR1 = document.getElementById("versteckenScreen-1");
 let hideScreenR2 = document.getElementById("versteckenScreen-2");
 
+let madeItScreenOne = document.getElementById('rechtzeitig-entkommen')
+
 
 
 
@@ -371,15 +373,15 @@ function showRoomOne(){
     TableFour.style.display = 'none'
 
     startTimer();
-    startTeacherBar(0);
+    startTeacherBarOne()
 
 }
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
 
+    startTeacherBarTwo()
     startTimer();
-    startTeacherBar(1);
 }
 
 
@@ -565,7 +567,7 @@ let teacherBarInterval;
 
 let teacherHasArrived = false;
 
-function startTeacherBar(){
+function startTeacherBarOne(){
 
     clearInterval(teacherBarInterval);
 
@@ -595,6 +597,66 @@ function startTeacherBar(){
 
     }, 1000);
 }
+function startTeacherBarTwo(){
+
+    clearInterval(teacherBarInterval);
+
+    teacherProgress = 0;
+    teacherHasArrived = false;
+
+    let teacherFill = document.getElementById("teacher-fill-1");
+
+    teacherFill.style.width = "0%";
+
+    teacherBarInterval = setInterval(() => {
+
+        teacherProgress += Math.random() * 20;
+
+        teacherFill.style.width = teacherProgress + "%";
+
+        if(teacherProgress >= 100){
+
+            teacherFill.style.width = "100%";
+
+            clearInterval(teacherBarInterval);
+
+            teacherHasArrived = true;
+
+            teacherArrives();
+        }
+
+    }, 1000);
+}
+
 
 // Selber
-f
+function hideRoomOne(){
+    classOne.style.display = 'none'
+    hideScreenR1.style.display = 'grid'
+    //Logik mit lehrer fehlt hier noch
+
+}
+function hideRoomTwo(){
+    classTwo.style.display = 'none'
+    hideScreenR2.style.display = 'grid'
+    //Logik mit lehrer fehlt hier noch
+    
+}
+
+function goBackFromHidingOne(){
+    classOne.style.display = 'grid'
+    hideScreenR1.style.display = 'none'
+}
+
+function goBackFromHidingTwo(){
+    classTwo.style.display = 'grid'
+    hideScreenR2.style.display = 'none'
+}
+
+// Entkommen
+function getOutOne(){
+    madeItScreenOne.style.display = 'grid'
+    classOne.style.display = 'none'
+    // Logik für INevntar + reset
+
+}

@@ -2675,7 +2675,7 @@ opacity: 1;}
     top: 6rem;
 }
 
-.teacher-bar{
+#teacher-bar{
     width: 10vw;
     height: 2vh;
     border: 2px solid rgb(134, 134, 134);
@@ -2686,7 +2686,25 @@ opacity: 1;}
     right: 3rem;
     overflow: hidden;
 }
-.teacher-fill{
+#teacher-fill{
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition: width 0.2s linear;
+}
+
+#teacher-bar-1{
+    width: 10vw;
+    height: 2vh;
+    border: 2px solid rgb(134, 134, 134);
+    background-color: transparent;
+    position: absolute;
+    z-index: 16;
+    top: 8.2rem;
+    right: 3rem;
+    overflow: hidden;
+}
+#teacher-fill-1{
     width: 0%;
     height: 100%;
     background-color: white;
@@ -2811,4 +2829,91 @@ opacity: 1;}
     font-family: text;  
     left: 36rem;
     bottom: 0rem; 
+}
+#rausBar{
+    width: 20vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 32rem;
+}
+#ausSchrank{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 90;
+    left: 36.3rem;
+    bottom: 1rem; 
+}
+#ausSchrank:hover{
+    cursor: pointer;
+}
+#rausBar-1{
+    width: 20vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 32rem;
+}
+#ausSchrank-1{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 90;
+    left: 36.3rem;
+    bottom: 1rem; 
+}
+#ausSchrank-1:hover{
+    cursor: pointer;
+}
+#rechtzeitig-entkommen{
+    display: none;
+}
+#entkommen-back{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+#zumInventarBar{
+    width: 18vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 32rem;
+}
+#zumInventar{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    width: 30vw;
+    position: absolute;
+    z-index: 90;
+    left: 35rem;
+    bottom: 1rem; 
+}
+#zumInventar:hover{
+    cursor: pointer;
+}
+#student{
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    z-index: 17;
+    left: 25rem;
+    top: 12rem;
+    
 }

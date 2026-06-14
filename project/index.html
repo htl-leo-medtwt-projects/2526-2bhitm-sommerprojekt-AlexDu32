@@ -398,8 +398,8 @@
         <img id="lehrer-kommt-back" src="img/timeBack.png">
         <img id="lehrer-icon" src="img/lehrer-leiste.png">
 
-        <div class="teacher-bar">
-             <div class="teacher-fill"></div>
+        <div id="teacher-bar">
+             <div id="teacher-fill"></div>
         </div>
         
 
@@ -416,9 +416,9 @@
            <img id="pfeil-vier" class="arrow" onclick="showTableFour()" src="img/pfeil.png">
 
            <div id="raum-entscheidung-1"></div>
-           <p id="loot-beenden-1">Lootvorgang beenden</p>
+           <p id="loot-beenden-1" onclick="getOutOne()">Lootvorgang beenden</p>
            <p id="entscheidung-zwischen-1">|</p>
-           <p id="verstecken-entscheidung-1" onclick="verstecken()">verstecken</p>
+           <p id="verstecken-entscheidung-1" onclick="hideRoomOne()">verstecken</p>
         </div>
 
         <div id="Tisch-1">
@@ -482,10 +482,21 @@
             <img class="zurckKlasseBack" src="img/timeBack.png">
         </div>
 
+<!---->
         <div id="versteckenScreen-1">
             <img id="verstecken-back-1" src="img/verstecken-screen.png">
+            <div id="rausBar"></div>
+            <p id="ausSchrank" onclick="goBackFromHidingOne()">Rausgehen</p>
         </div>
+<!---->
+        <div id="rechtzeitig-entkommen">
+            <img id="entkommen-back" src="img/entkommen.png">
+            <img id="student" src="img/schueler.png">
 
+            <div id="zumInventarBar"></div>
+            <p id="zumInventar" onclick="">zum Inventar</p>
+        </div>
+<!---->
         
         
         
@@ -500,8 +511,8 @@
         <img id="lehrer-kommt-back-2" src="img/timeBack.png">
         <img id="lehrer-icon-2" src="img/lehrer-leiste.png">
 
-        <div class="teacher-bar">
-             <div class="teacher-fill"></div>
+        <div id="teacher-bar-1">
+             <div id="teacher-fill-1"></div>
         </div>
 
         <div id="loot-2-start">
@@ -515,7 +526,7 @@
            <div id="raum-entscheidung-2"></div>
            <p id="loot-beenden-2">Lootvorgang beenden</p>
            <p id="entscheidung-zwischen-2">|</p>
-           <p id="verstecken-entscheidung-2" onclick="verstecken()">verstecken</p>
+           <p id="verstecken-entscheidung-2" onclick="hideRoomTwo()">verstecken</p>
         </div>
 
         <div id="Tisch-5">
@@ -579,6 +590,8 @@
 
         <div id="versteckenScreen-2">
             <img id="verstecken-back-2" src="img/verstecken-screen-2.png">
+            <div id="rausBar-1"></div>
+            <p id="ausSchrank-1" onclick="goBackFromHidingTwo()">Rausgehen</p>
         </div>
     </div>
 
