@@ -64,6 +64,9 @@ let rucksackLvl2Gekauft = false;
 
 let isHidden = false;
 
+let uhrduoOne = document.getElementById('uhr-duo')
+let uhrduoTwo = document.getElementById('uhr-duo-1')
+
 
 
 // Räume
@@ -304,7 +307,7 @@ function showInventar(){
 
     LebenslaufDatum.innerHTML = datum
     LebenslaufName.innerHTML = SpielerName
-    LebenslaufKontostand.innerHTML = Kontostand
+    LebenslaufKontostand.innerHTML = Kontostand +"€"
     LebensLaufKapazitaet.innerHTML = backcapacityInv
 }
 
@@ -498,12 +501,26 @@ function startTimer(){
 
         if(timeLeft <= 0){
 
-            clearInterval(timer);
+    clearInterval(timer);
+    clearInterval(teacherBarInterval);
 
-            alert("Zeit abgelaufen!");
+    if(RaumIndex == 1){
+        uhrduoOne.style.display ='none'
 
-            // Hier später Runde verloren
-        }
+        classOne.style.display = 'none';
+        verlorenScreenR1.style.display = 'grid';
+
+    }
+
+    if(RaumIndex == 2){
+        uhrduoTwo.style.display = 'none'
+
+        classTwo.style.display = 'none';
+        verlorenScreenR2.style.display = 'grid';
+
+    }
+
+}
 
     }, 1000);
 
@@ -674,14 +691,15 @@ function goBackFromHidingTwo(){
 function getOutOne(){
 
     endRound();
+    uhrduoOne.style.display = 'none'
 
     madeItScreenOne.style.display = 'grid';
     classOne.style.display = 'none';
-
 }
 function getOutTwo(){
 
     endRound();
+    uhrduoTwo.style.display = 'none'
 
     madeItScreenTwo.style.display = 'grid';
     classTwo.style.display = 'none';
@@ -720,7 +738,7 @@ function updateInventar(){
 
     LebenslaufDatum.innerHTML = datum;
     LebenslaufName.innerHTML = SpielerName;
-    LebenslaufKontostand.innerHTML = Kontostand;
+    LebenslaufKontostand.innerHTML = Kontostand +"€";
     LebensLaufKapazitaet.innerHTML = backpackCapacity;
 
     lootedSum = 0;
@@ -741,14 +759,32 @@ function teacherArrives(){
 
         classOne.style.display = 'none';
         verlorenScreenR1.style.display = 'grid';
-
+        uhrduoOne.style.display = 'none'
+       
     }
 
     if(RaumIndex == 2){
 
         classTwo.style.display = 'none';
         verlorenScreenR2.style.display = 'grid';
+        uhrduoTwo.style.display = 'none'
 
     }
 
+}
+function acceptOne(){
+    Kontostand -= 10
+    lootedSum = 0
+    
+    verlorenScreenR1.style.display = 'none'
+    Inventar.style.display = 'grid'
+    updateInventar()
+}
+function acceptTwo(){
+    Kontostand -= 10
+    lootedSum = 0
+    
+    verlorenScreenR2.style.display = 'none'
+    Inventar.style.display = 'grid'
+    updateInventar()
 }

@@ -3011,3 +3011,49 @@ opacity: 1;}
     left: 46rem;
     top: 11.5rem;
 }
+#aktzeptieren-bar{
+    width: 28vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 28rem;
+}
+#aktzeptieren{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 90;
+    left: 32rem;
+    bottom: 1rem;
+}
+#aktzeptieren:hover{
+    cursor: pointer;
+}
+
+#aktzeptieren-bar-1{
+    width: 28vw;
+    height: 7vh;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    border-radius: 100px;
+    bottom: 2rem;
+    left: 28rem;
+}
+#aktzeptieren-1{
+    font-size: 1.4rem;
+    color: black;
+    font-family: text;
+    position: absolute;
+    z-index: 90;
+    left: 32rem;
+    bottom: 1rem;
+}
+#aktzeptieren-1:hover{
+    cursor: pointer;
+}
+
