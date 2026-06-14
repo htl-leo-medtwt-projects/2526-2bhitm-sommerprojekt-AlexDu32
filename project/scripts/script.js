@@ -83,6 +83,9 @@ let TableSix = document.getElementById('Tisch-6')
 let TableSeven = document.getElementById('Tisch-7')
 let TableEight = document.getElementById('Tisch-8')
 
+// Verstecken screen
+
+
 
 
 
@@ -364,14 +367,16 @@ function showRoomOne(){
     TableThree.style.display = 'none'
     TableFour.style.display = 'none'
 
-    startTimer()
+    startTimer();
+    startTeacherBar();
 
 }
 function showRoomTwo(){
     roomTwo.style.display = 'grid'
     spielBlockFuenf.style.display = 'none'
 
-    startTimer()
+    startTimer();
+    startTeacherBar();
 }
 
 
@@ -547,4 +552,63 @@ function kaufeRucksackLvl2(){
 
         LebenslaufKontostand.innerHTML = Kontostand;
     }
+}
+
+
+// Lehrer kommt (Chat)
+let teacherProgress = 0;
+let teacherReturnTime;
+let teacherBarInterval;
+
+let teacherHasArrived = false;
+
+function startTeacherBar(){
+
+    clearInterval(teacherBarInterval);
+
+    teacherProgress = 0;
+    teacherHasArrived = false;
+
+    let teacherFill = document.getElementById("teacher-fill");
+
+    teacherFill.style.width = "0%";
+
+    teacherBarInterval = setInterval(() => {
+
+        teacherProgress += Math.random() * 20;
+
+        teacherFill.style.width = teacherProgress + "%";
+
+        if(teacherProgress >= 100){
+
+            teacherFill.style.width = "100%";
+
+            clearInterval(teacherBarInterval);
+
+            teacherHasArrived = true;
+
+            teacherArrives();
+        }
+
+    }, 1000);
+}
+
+// Selber
+function verstecken(){
+
+    if(!teacherHasArrived){
+        return;
+    }
+
+    clearInterval(teacherBarInterval);
+
+    document.getElementById("teacher-fill").style.width = "0%";
+
+    teacherHasArrived = false;
+
+}
+
+function teacherArrives(){
+    document.getElementById("verstecken-screen").style.display = "grid";
+
 }

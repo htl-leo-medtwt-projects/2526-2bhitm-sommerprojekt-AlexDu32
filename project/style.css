@@ -2651,9 +2651,28 @@ opacity: 1;}
 }
 #lehrer-icon{
     position: absolute;
-    z-index: 15;
+    z-index: 17;
     width: 12vw;
     height: auto;
     right: 7rem;
     top: 6rem;
+}
+
+#teacher-bar{
+    width: 10vw;
+    height: 2vh;
+    border: 2px solid rgb(134, 134, 134);
+    background-color: transparent;
+    position: absolute;
+    z-index: 16;
+    top: 8.2rem;
+    right: 3rem;
+    overflow: hidden;
+}
+
+#teacher-fill{
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition: width 0.2s linear;
 }
