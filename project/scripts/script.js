@@ -99,6 +99,9 @@ let madeItScreenTwo = document.getElementById('rechtzeitig-entkommen-1')
 let verlorenScreenR1 = document.getElementById('lehrer-erwischt')
 let verlorenScreenR2 = document.getElementById('lehrer-erwischt-1')
 
+let acceptDuoOne  = document.getElementById('accept')
+let acceptDuoTwo  = document.getElementById('accept-1')
+
 
 
 
@@ -777,6 +780,7 @@ function acceptOne(){
     lootedSum = 0
     
     verlorenScreenR1.style.display = 'none'
+    acceptDuoOne.style.display ='none'
     Inventar.style.display = 'grid'
     updateInventar()
 }
@@ -785,6 +789,7 @@ function acceptTwo(){
     lootedSum = 0
     
     verlorenScreenR2.style.display = 'none'
+    acceptDuoTwo.style.display ='none'
     Inventar.style.display = 'grid'
     updateInventar()
 }
