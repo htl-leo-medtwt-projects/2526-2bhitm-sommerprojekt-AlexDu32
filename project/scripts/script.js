@@ -733,6 +733,8 @@ function endRound(){
     teacherHasArrived = false;
 
     currentWeight = 0;
+    
+     RaumIndex = 0
 
 }
 function updateInventar(){
